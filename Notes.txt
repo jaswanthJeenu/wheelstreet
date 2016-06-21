@@ -1,0 +1,18 @@
+TO DO:
+
+1) Changing the status bar colour for dev, staging and production
+    --> Check and fix the navigation bar color
+2) Register for push notifications
+3) Force update
+4) Crashlytics
+5) Mixpanel
+6) Animating the such that the keyboard doesn't block the text fields
+
+--> If you change the location of the fabric framework be careful to chenge it in Project settings -> build phases as well and in the top bar of the dektop, got window -> projects and delete the wheelstreet project and then run it again in X-code. The second step we have done is for removal of cached files and may or may not be neceessary.
+
+--> Create a seperate file for integrating all the events which should be tracked in single file. Every time we want to track an event, we simply call that method and it tracks the event. Also include the fact that it should track the events only if it is a production environment.
+
+
+--> If a user fails to verify his phonw number using OTP, then where should he be redirected if he closes and opens the app again. Because we would be saving the user details in NSUserDefaults and when the app opens we would be checking if we have a user saved in NSUserDefaults to decided whether to show the Login Flow or the Home Screen.
+
+--> The project used for creating the sidebar is https://github.com/aryaxt/iOS-Slide-Menu. Download this and make the changes as shown.

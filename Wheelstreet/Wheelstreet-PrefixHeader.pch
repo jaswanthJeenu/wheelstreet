@@ -1,0 +1,38 @@
+//
+//  PrefixHeader.pch
+//  Wheelstreet
+//
+//  Created by Jaswanth Jeenu on 01/06/16.
+//  Copyright © 2016 Bashar Technologies Pvt Ltd. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+@import GoogleMaps;
+
+#import "ApiManager.h"
+#import "WSConstants.h"
+#import "WSConfig.h"
+#import "Mixpanel.h"
+#import "AppDelegate.h"
+#import "Reachability.h"
+#import "WSUtils.h"
+#import "MBProgressHUD.h"
+#import "WSBaseViewController.h"
+#import "WSUser.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import <FBSDKShareKit/FBSDKShareKit.h>
+#import "Fabric/Fabric.h"
+#import "Crashlytics/Crashlytics.h"
+#import "UINavigationController+TransparentNavigationController.h"
+#import "MVPlaceSearchTextField.h"
+#import <GoogleMaps/GoogleMaps.h>
+#import <CoreLocation/CoreLocation.h>
+
+
+#endif /* PrefixHeader_pch */

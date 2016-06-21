@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  Wheelstreet
+
+  Created by Jaswanth Jeenu on 08/06/16.
+  Copyright © 2016 Bashar Technologies Pvt Ltd. All rights reserved.
+*/
+
+"SIGNING_IN" = "Signing in";
+"LOGGING_OUT" = "Logging out";
+"LOGIN_FAILED" = "Login failed";
+"FAILURE_HANDLER_TITLE" = "Sorry!";
+"FAILURE_HANDLER_MESSAGE" = "Unfortunately, your request failed";
+"ERROR" = "Error!";
+"OK" = "OK";
+"ALL_THE_FIELDS_ARE_MANDATORY" = "All the fields are mandatory";
+"PLEASE_ENTER_YOUR_MOBILE_NUMBER" = "Please enter your mobile number";
+"PLEASE_ENTER_YOUR_PASSWORD" = "Please enter your password";
+"PLEASE_ENTER_YOUR_OTP_CODE" = "Please enter your OTP code";
+"PLEASE_FILL_BOTH_THE_FIELDS" = "Please fill both the fields";
+"PASSWORDS_DIDN'T_MATCH" = "Passwords didn't match";
+"SIGNING_UP" = "Signing up";
+"SENDING_OTP" = "Sending OTP";
+"VERIFYING_OTP" = "Verifying OTP";
+"UPDATING_YOUR_PASSWORD" = "Updating your password";
+"PASSWORD_CANNOT_START_OR_END_WITH_A_WHITESPACE" = "Password cannot start or end with a whitespace";
+"FETCHING_YOUR_LOCATION" = "Fetching your location";
+"FAILED_TO_GET_YOUR_LOCATION" = "Failed to get your location";
+"LOADING" = "Loading";
+"MANDATORY_UPDATE" = "Mandatory Update";
+"TO_PROCEED_YOU_MUST_UPDATE_TO_THE_LATEST_VERSION" = "To proceed, you must update to the latest version";
+"PLEASE_ENTER_YOUR_LOCATION" = "Please enter your location";
+"DROP_TIME_SHOULD_BE_GREATER_THAN_PICKUP_TIME" = "Drop time should be greater than pickup time";
+"WE_OPERATE_ONLY_FROM 11_A.M_TO_7_P.M" = "We only operate from 11 A.M to 7 P.M";
+"THE_MINIMUM_TRIP_DURATION_IS_3_HOURS" = "The minimum trip duration is 3 hours";
