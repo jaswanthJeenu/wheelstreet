@@ -28,7 +28,7 @@
     
     self.tableBike.showsVerticalScrollIndicator = NO;
     self.tableBike.bounces = NO;
-    [self.tableBike setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]]; 
+    [self.tableBike setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
     
     bikesArray = [[NSMutableArray alloc] init];
     countArray = [[NSMutableArray alloc] init];
@@ -85,7 +85,7 @@
         
         i++;
         
-     }
+    }
     
     if (i == 0){
         
@@ -126,21 +126,34 @@
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     self.tableBike.separatorColor = [UIColor clearColor];
     
-//    UIView *greySeperation = [[UIView alloc] initWithFrame:CGRectMake(8.0f, 51.0f, self.tableBike.frame.size.width - 16.0f, 0.5f)];
-//    [greySeperation setBackgroundColor:[UIColor colorWithRed:214/255.0f green:214/255.0f blue:214/255.0f alpha:1.0f]];
-//    [cell.contentView addSubview:greySeperation];
-
-    Bikes *bikeBooked = [bikesArray objectAtIndex:indexPath.row];
+    //    UIView *greySeperation = [[UIView alloc] initWithFrame:CGRectMake(8.0f, 51.0f, self.tableBike.frame.size.width - 16.0f, 0.5f)];
+    //    [greySeperation setBackgroundColor:[UIColor colorWithRed:214/255.0f green:214/255.0f blue:214/255.0f alpha:1.0f]];
+    //    [cell.contentView addSubview:greySeperation];
+    
+    Bookings *bikeBooked = [bikesArray objectAtIndex:indexPath.row];
     NSString *bikeImageSmallString = bikeBooked.bike_image_small;
     NSURL *bikeImageSmallURL = [NSURL URLWithString:bikeImageSmallString];
     cell.imgBikeSmall.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:bikeImageSmallURL]];
     
     [cell.lblBikeName setText:[NSString stringWithFormat:@"%@ %@", bikeBooked.brand_name, bikeBooked.model_name]];
-//    [cell.lblCashDetails setText:[NSString stringWithFormat:@"Rs. %@ rent. Rs. %@ deposit", [bikeBooked.price stringValue], bikeBooked.security_deposit]];
-    
+    //    [cell.lblCashDetails setText:[NSString stringWithFormat:@"Rs. %@ rent. Rs. %@ deposit", [bikeBooked.price stringValue], bikeBooked.security_deposit]];
     
     NSMutableArray *locationsArray = [[NSMutableArray alloc] init];
     n = 0;k = 0;
+    
+    NSNumber* bikeId = bikeBooked.bike_id;
+    
+    for (m = 0; m < [self.bookingsArray count]; m++){
+        
+        if ([[[self.bookingsArray objectAtIndex:m] bike_id] isEqual:bikeId]){
+            
+            break;
+            
+        }
+    }
+    
+    
+    
     
     while (m < [self.bookingsArray count] - 1) {
         
@@ -157,7 +170,7 @@
             m++;
             k++;
             break;
-    
+            
         }
         
     }
@@ -172,7 +185,7 @@
     
     
     else if ((m == [self.bookingsArray count] - 1)
-        && ([[[self.bookingsArray objectAtIndex:m] bike_id] isEqual:[[self.bookingsArray objectAtIndex:m - 1] bike_id]])){
+             && ([[[self.bookingsArray objectAtIndex:m] bike_id] isEqual:[[self.bookingsArray objectAtIndex:m - 1] bike_id]])){
         
         [locationsArray insertObject:[self.bookingsArray objectAtIndex:m] atIndex: n];
         m++;
@@ -181,13 +194,16 @@
     }
     
     else if ((m == [self.bookingsArray count] - 1)
-        && (![[[self.bookingsArray objectAtIndex:m] bike_id] isEqual:[[self.bookingsArray objectAtIndex:m - 1] bike_id]])
-        && (k == 0)){
+             && (![[[self.bookingsArray objectAtIndex:m] bike_id] isEqual:[[self.bookingsArray objectAtIndex:m - 1] bike_id]])
+             && (k == 0)){
         
         [locationsArray insertObject:[self.bookingsArray objectAtIndex:m] atIndex:0];
         m++;
         
     }
+    
+    
+    
     
     cell.locationsArray = locationsArray;
     
@@ -218,7 +234,7 @@
 
 - (IBAction)btnBookNowClicked:(id)sender {
     
-
+    
     
     
 }

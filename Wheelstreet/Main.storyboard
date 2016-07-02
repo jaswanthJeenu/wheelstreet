@@ -4265,8 +4265,8 @@ We'll send you an OTP.</string>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bh7-fk-ttv">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.63529411764705879" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                        <state key="normal" title="CART"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <state key="normal" title="PROCEED TO CART"/>
                                         <connections>
                                             <segue destination="ykL-cU-0cI" kind="show" id="VmA-sx-vns"/>
                                         </connections>
@@ -4406,7 +4406,7 @@ We'll send you an OTP.</string>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T30-rG-aiM">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.63529411764705879" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                         <state key="normal" title="BOOK NOW"/>
                                         <connections>
                                             <action selector="btnBookNowClicked:" destination="ykL-cU-0cI" eventType="touchUpInside" id="vAs-su-XzS"/>
