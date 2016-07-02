@@ -33,3 +33,4 @@
 "DROP_TIME_SHOULD_BE_GREATER_THAN_PICKUP_TIME" = "Drop time should be greater than pickup time";
 "WE_OPERATE_ONLY_FROM 11_A.M_TO_7_P.M" = "We only operate from 11 A.M to 7 P.M";
 "THE_MINIMUM_TRIP_DURATION_IS_3_HOURS" = "The minimum trip duration is 3 hours";
+"NO_BOOKINGS_DONE" = "No bookings done";

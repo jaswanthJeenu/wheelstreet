@@ -26,7 +26,7 @@
     self.tableLocations.dataSource = self;
     
     self.tableLocations.showsVerticalScrollIndicator = NO;    // This is to hide the scroll indicator which appears on the right when scrolling. It is a property of UIScrollView and it works also
-                                                              //for UITableView coz UITableView inherits from UIScrollView
+    //for UITableView coz UITableView inherits from UIScrollView
     
     self.tableLocations.bounces = NO;
     
@@ -57,17 +57,17 @@
     cell = [self.tableLocations dequeueReusableCellWithIdentifier:@"location"];
     
     
-//    [cell.lblLocationName setText:[[self.locationsArray objectAtIndex:indexPath.row] stringForKey:JSON_KEY_LOCATION]];
+    //    [cell.lblLocationName setText:[[self.locationsArray objectAtIndex:indexPath.row] stringForKey:JSON_KEY_LOCATION]];
     
     
-//    NSLog(@"%ld", (long)indexPath.row);
+    //    NSLog(@"%ld", (long)indexPath.row);
     
-//    NSNumber *numberOfBikes = [[self.locationsArray objectAtIndex:indexPath.row] objectForKey:JSON_KEY_QUANTITY];  // Notice that these quanitites in the response object are numbers, not strings
-//    NSNumber *locationDistance = [[self.locationsArray objectAtIndex:indexPath.row] objectForKey:JSON_KEY_DISTANCE];
+    //    NSNumber *numberOfBikes = [[self.locationsArray objectAtIndex:indexPath.row] objectForKey:JSON_KEY_QUANTITY];  // Notice that these quanitites in the response object are numbers, not strings
+    //    NSNumber *locationDistance = [[self.locationsArray objectAtIndex:indexPath.row] objectForKey:JSON_KEY_DISTANCE];
     
-//    NSString *bikesQuantity = [numberOfBikes stringValue];
-//    NSString *distance = [locationDistance stringValue];
-//    [cell.lblLocationDistance setText:[NSString stringWithFormat:@"%@ km away", locationDistance]];
+    //    NSString *bikesQuantity = [numberOfBikes stringValue];
+    //    NSString *distance = [locationDistance stringValue];
+    //    [cell.lblLocationDistance setText:[NSString stringWithFormat:@"%@ km away", locationDistance]];
     
     bikesQuantityArray[indexPath.row] = [[self.locationsArray objectAtIndex:indexPath.row] objectForKey:JSON_KEY_QUANTITY];
     
@@ -97,14 +97,18 @@
     
     NSFetchRequest *bookedBikesQuantityRequest = [NSFetchRequest fetchRequestWithEntityName:CORE_DATA_ENTITY_BOOKINGS];
     NSPredicate *dealerBikeIdPredicate = [NSPredicate predicateWithFormat:@"dealer_bike_id = %@", [[self.locationsArray objectAtIndex:indexPath.row]
-                                                                                                                                          objectForKey:JSON_KEY_DEALER_BIKE_ID]];
+                                                                                                   objectForKey:JSON_KEY_DEALER_BIKE_ID]];
     bookedBikesQuantityRequest.predicate = dealerBikeIdPredicate;
     
     NSMutableArray *bookedBikesQuantityArray = [[NSMutableArray alloc] init];
     bookedBikesQuantityArray = [[appDelegate.managedObjectContext executeFetchRequest:bookedBikesQuantityRequest error:nil] mutableCopy];
     
+    //    NSLog(@"%@", [bookedBikesQuantityArray objectAtIndex:0]);
+    
     if ([bookedBikesQuantityArray count] != nil){
         
+        
+        NSLog(@"%@", [bookedBikesQuantityArray objectAtIndex:0]);
         countArray[indexPath.row] = [[bookedBikesQuantityArray objectAtIndex:0] quantity];
         
     }
@@ -123,7 +127,7 @@
     else{
         [cell.btnIncreaseCount setEnabled:YES];
     }
-
+    
     
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     
@@ -141,7 +145,7 @@
 
 
 -(void)btnIncreaseCountClicked:(UIButton*) sender{
- 
+    
     if ([countArray[sender.tag] integerValue] < [[bikesQuantityArray objectAtIndex:sender.tag] integerValue]){
         countArray[sender.tag] = [NSNumber numberWithInteger:[countArray[sender.tag] integerValue] + 1];
     }
@@ -182,7 +186,7 @@
         }
         
         for (i = 0; i < [self.locationsArray count]; i++){
-
+            
             if (!(BOOL)[countArray[i] isEqual:[NSNumber numberWithInteger:0]]){ // Be careful,we can't write if (countArray[i]!=0) since they are objects. Keep checking in debugger for right format
                 
                 Bookings *bookings = [NSEntityDescription insertNewObjectForEntityForName:CORE_DATA_ENTITY_BOOKINGS inManagedObjectContext:appDelegate.managedObjectContext];
@@ -211,7 +215,7 @@
         
     }
 }
-    
+
 
 - (IBAction)btnBackClicked:(id)sender {
     

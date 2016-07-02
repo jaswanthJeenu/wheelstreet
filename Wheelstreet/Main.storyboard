@@ -1860,7 +1860,7 @@ We'll send you an OTP.</string>
                     <connections>
                         <outlet property="txtOTPCode" destination="DtG-k0-ssv" id="xaE-eA-3lR"/>
                         <segue destination="rym-RN-JFf" kind="show" identifier="showNewPasswordScreenSegue" id="Sms-FE-oeF"/>
-                        <segue destination="GwG-f5-2TE" kind="show" identifier="showLoginScreenAfterSignupSegue" id="0NV-vd-XhC"/>
+                        <segue destination="LeA-OU-oBQ" kind="show" identifier="showLoginScreenAfterSignupSegue" id="Aua-sN-XoW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Rq-iD-zYe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -4267,9 +4267,6 @@ We'll send you an OTP.</string>
                                         <color key="backgroundColor" red="0.0" green="0.63529411764705879" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                         <state key="normal" title="PROCEED TO CART"/>
-                                        <connections>
-                                            <segue destination="ykL-cU-0cI" kind="show" id="VmA-sx-vns"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.80784313725490198" green="0.80784313725490198" blue="0.80784313725490198" alpha="1" colorSpace="calibratedRGB"/>
@@ -4382,6 +4379,7 @@ We'll send you an OTP.</string>
                         <outlet property="txtSearchBikes" destination="1qs-Id-YBt" id="Vfg-h9-Fat"/>
                         <outlet property="viewBtnCart" destination="JGR-Fv-3PB" id="q6h-19-I7V"/>
                         <segue destination="haW-QS-Ngb" kind="show" identifier="showLocationsSegue" id="PnS-2o-oDS"/>
+                        <segue destination="ykL-cU-0cI" kind="show" identifier="showCartSegue" id="OKo-2a-XAk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Igd-oL-32J" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -4892,9 +4890,10 @@ We'll send you an OTP.</string>
     <inferredMetricsTieBreakers>
         <segue reference="IiM-0T-zUP"/>
         <segue reference="nSo-he-RSD"/>
+        <segue reference="Aua-sN-XoW"/>
         <segue reference="VKv-sK-POA"/>
-        <segue reference="4Rv-f2-UxL"/>
         <segue reference="cB6-Jg-2JA"/>
+        <segue reference="4Rv-f2-UxL"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

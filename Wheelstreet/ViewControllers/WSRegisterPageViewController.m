@@ -24,6 +24,7 @@
     //self.hidesBottomBarWhenPushed = YES;
     
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor]};
+    self.navigationItem.hidesBackButton = YES;
     
     pageViewControlIndex = 0;
     contentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"LoginViewController"];

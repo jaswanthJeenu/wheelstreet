@@ -22,46 +22,46 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    [self.navigationController presentTransparentNavigationBar];
+    //    [self.navigationController presentTransparentNavigationBar];
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"status_bar_bg"] forBarMetrics:UIBarMetricsDefault];
     
-// Use the commented out method below when you have to change the title of a navigation bar with only 1 bar button item
-//=====================================================================================================================
+    // Use the commented out method below when you have to change the title of a navigation bar with only 1 bar button item
+    //=====================================================================================================================
     
-//    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
-//    titleLabel.backgroundColor = [UIColor clearColor];
-//    titleLabel.textColor = [UIColor whiteColor];
-//    titleLabel.font = [UIFont boldSystemFontOfSize:20];
-//    titleLabel.text = @"Your Titledvhdiuiuf;kvhjcbvijkhcviufshvjcbjvkbcj bcx uoch bjc bcub ucxb xc";
-//    [titleLabel sizeToFit];
+    //    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
+    //    titleLabel.backgroundColor = [UIColor clearColor];
+    //    titleLabel.textColor = [UIColor whiteColor];
+    //    titleLabel.font = [UIFont boldSystemFontOfSize:20];
+    //    titleLabel.text = @"Your Titledvhdiuiuf;kvhjcbvijkhcviufshvjcbjvkbcj bcx uoch bjc bcub ucxb xc";
+    //    [titleLabel sizeToFit];
     
-//    UILabel *subTitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 22, 0, 0)];
-//    subTitleLabel.backgroundColor = [UIColor clearColor];
-//    subTitleLabel.textColor = [UIColor whiteColor];
-//    subTitleLabel.font = [UIFont systemFontOfSize:12];
-//    subTitleLabel.text = @"Your subtitlevcjv bcuivh iuchv uihfivj bc ncjkbmcnkjcbviuhdsfjvnckn jkcbnvu uocvhoucvbn";
-//    [subTitleLabel sizeToFit];
-//    
-//    UIView *twoLineTitleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width - 60.0f, 30)];
-//    [twoLineTitleView addSubview:titleLabel];
-//    [twoLineTitleView addSubview:subTitleLabel];
-//    
-//    float widthDiff = subTitleLabel.frame.size.width - titleLabel.frame.size.width;
-//    
-//    if (widthDiff > 0) {
-//        CGRect frame = titleLabel.frame;
-//        frame.origin.x = widthDiff / 2;
-//        titleLabel.frame = CGRectIntegral(frame);
-//    }else{
-//        CGRect frame = subTitleLabel.frame;
-//        frame.origin.x = fabsf(widthDiff) / 2;
-//        subTitleLabel.frame = CGRectIntegral(frame);
-//    }
-//    
-//    self.navigationItem.titleView = twoLineTitleView;
+    //    UILabel *subTitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 22, 0, 0)];
+    //    subTitleLabel.backgroundColor = [UIColor clearColor];
+    //    subTitleLabel.textColor = [UIColor whiteColor];
+    //    subTitleLabel.font = [UIFont systemFontOfSize:12];
+    //    subTitleLabel.text = @"Your subtitlevcjv bcuivh iuchv uihfivj bc ncjkbmcnkjcbviuhdsfjvnckn jkcbnvu uocvhoucvbn";
+    //    [subTitleLabel sizeToFit];
+    //
+    //    UIView *twoLineTitleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width - 60.0f, 30)];
+    //    [twoLineTitleView addSubview:titleLabel];
+    //    [twoLineTitleView addSubview:subTitleLabel];
+    //
+    //    float widthDiff = subTitleLabel.frame.size.width - titleLabel.frame.size.width;
+    //
+    //    if (widthDiff > 0) {
+    //        CGRect frame = titleLabel.frame;
+    //        frame.origin.x = widthDiff / 2;
+    //        titleLabel.frame = CGRectIntegral(frame);
+    //    }else{
+    //        CGRect frame = subTitleLabel.frame;
+    //        frame.origin.x = fabsf(widthDiff) / 2;
+    //        subTitleLabel.frame = CGRectIntegral(frame);
+    //    }
+    //
+    //    self.navigationItem.titleView = twoLineTitleView;
     
-//=====================================================================================================================
-
+    //=====================================================================================================================
+    
     
     CGRect frame = self.navigationController.navigationBar.frame;
     
@@ -91,12 +91,12 @@
     self.tableDisplay.separatorColor = [UIColor clearColor];
     
     
-        
-//    NSNotificationCenter *notify = [NSNotificationCenter defaultCenter];
-//    NSNumber *tag;
-//    [notify addObserver:self selector:@selector(seeLocations:) name:@"revealHomeScreen" object:tag];
-//
-
+    
+    //    NSNotificationCenter *notify = [NSNotificationCenter defaultCenter];
+    //    NSNumber *tag;
+    //    [notify addObserver:self selector:@selector(seeLocations:) name:@"revealHomeScreen" object:tag];
+    //
+    
     locationsArray = [[NSMutableArray alloc] init];
     
     self.viewBtnCart.layer.shadowColor = [UIColor blackColor].CGColor;
@@ -114,9 +114,9 @@
     
     self.tableDisplay.bounces = NO;  // This is to prevent scrolling after the last cell or before top cell(Eg: Refreshing in FB messenger
     self.tableDisplay.showsVerticalScrollIndicator = NO;  // This is to hide the scroll indicator which appears on the right when scrolling. It is a property of UIScrollView and it works also
-                                                          //for UITableView coz UITableView inherits from UIScrollView
+    //for UITableView coz UITableView inherits from UIScrollView
     [self.tableDisplay setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];   // This is for avoiding the extra lines for empty cells in the table view
-
+    
     
     NSFetchRequest *brandsFilterRequest = [NSFetchRequest fetchRequestWithEntityName:CORE_DATA_ENTITY_BRANDS_FILTER];
     NSFetchRequest *priceFilterRequest = [NSFetchRequest fetchRequestWithEntityName:CORE_DATA_ENTITY_PRICE_FILTER];
@@ -131,35 +131,35 @@
         request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:CORE_DATA_ENTITY_BIKES_ATTRIBUTE_NEAREST_LOCATION_DISTANCE ascending:YES]];
         self.bikesArray = [[appDelegate.managedObjectContext executeFetchRequest:request error:nil] mutableCopy];
     }
-
+    
     else {
         
         NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:CORE_DATA_ENTITY_BIKES];
         
         if ([self.priceFilterArray count] != nil){
-        
-        PriceFilter *priceFilter = self.priceFilterArray[0];
-        
-//        NSLog(@"%@", priceFilter.low_to_high);
-//        NSLog(@"%i", [priceFilter.low_to_high isEqual:[NSNumber numberWithBool:YES]]);
+            
+            PriceFilter *priceFilter = self.priceFilterArray[0];
+            
+            //        NSLog(@"%@", priceFilter.low_to_high);
+            //        NSLog(@"%i", [priceFilter.low_to_high isEqual:[NSNumber numberWithBool:YES]]);
             if ([priceFilter.low_to_high isEqual:[NSNumber numberWithBool:YES]]){
-    
+                
                 isPriceLowToHigh = YES;
                 
             }
             else{
-    
+                
                 isPriceLowToHigh = NO;
                 
             }
         }
-            
+        
         if ([self.brandsFilterArray count] != nil){
             
             NSMutableArray *predicateArray = [[NSMutableArray alloc] init];
             int i;
             for (i = 0; i < [self.brandsFilterArray count]; i++){
-                    
+                
                 NSPredicate *brandIdPredicate = [NSPredicate predicateWithFormat:@"brand_id = %@",[[self.brandsFilterArray objectAtIndex:i] brand_id]];
                 [predicateArray insertObject:brandIdPredicate atIndex:i];
                 
@@ -167,7 +167,7 @@
             NSPredicate *compoundPredicate = [NSCompoundPredicate orPredicateWithSubpredicates:predicateArray];
             
             request.predicate = compoundPredicate;
-
+            
         }
         
         if (isPriceLowToHigh == YES){
@@ -180,50 +180,50 @@
         self.bikesArray = [[appDelegate.managedObjectContext executeFetchRequest:request error:nil] mutableCopy];    //mutableCopy is used to convert a NSArray to NSMutableArray
         
     }
- 
+    
     
 }
 
 
 //-(void)viewWillAppear:(BOOL)animated{
-//    
+//
 //    NSFetchRequest *brandsFilterRequest = [NSFetchRequest fetchRequestWithEntityName:@"BrandsFilter"];
 //    NSFetchRequest *priceFilterRequest = [NSFetchRequest fetchRequestWithEntityName:@"PriceFilter"];
 //    self.brandsFilterArray = [[NSMutableArray alloc] init];
 //    self.priceFilterArray = [[NSMutableArray alloc] init];
 //    self.brandsFilterArray = [[appDelegate.managedObjectContext executeFetchRequest:brandsFilterRequest error:nil] mutableCopy];
 //    self.priceFilterArray = [[appDelegate.managedObjectContext executeFetchRequest:priceFilterRequest error:nil] mutableCopy];
-//    
+//
 //    if (([self.brandsFilterArray count] == nil)     // Here we can't use if (self.filtersArray == nil){ coz if you print and see it in debugger it won't be nil. It has the address of a nil array
 //        && ([self.priceFilterArray count] == nil)){
 //        NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Bikes"];
 //        //        request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"brand_name" ascending:YES]];
 //        self.bikesArray = [[appDelegate.managedObjectContext executeFetchRequest:request error:nil] mutableCopy];
 //    }
-//    
+//
 //    else if (([self.brandsFilterArray count] == nil)
 //             && ([self.priceFilterArray count] != nil)){
-//        
+//
 //        NSFetchRequest *priceFilterRequest = [NSFetchRequest fetchRequestWithEntityName:@"PriceFilter"];
 //        NSArray *priceFilterArray = [appDelegate.managedObjectContext executeFetchRequest:priceFilterRequest error:nil];
 //        PriceFilter *priceFilter = priceFilterArray[0];
 //        if (priceFilter.low_to_high == [NSNumber numberWithBool:YES]){
-//            
+//
 //            NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Bikes"];
 //            request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"price" ascending:YES]];
 //            self.bikesArray = [[appDelegate.managedObjectContext executeFetchRequest:request error:nil] mutableCopy];
-//            
+//
 //        }
 //        else{
-//            
+//
 //            NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Bikes"];
 //            request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"price" ascending:NO]];
 //            self.bikesArray = [[appDelegate.managedObjectContext executeFetchRequest:request error:nil] mutableCopy];
-//            
+//
 //        }
-//        
+//
 //    }
-//    
+//
 //
 //}
 
@@ -277,7 +277,7 @@
 
 
 //-(void)seeLocations:(NSNotificationCenter*) notification{
-//    
+//
 //    if (notificatio isEqualToString:@"seeLocations"])
 //    {
 //        NSDictionary* userInfo = (NSDictionary*)notification.object;
@@ -321,7 +321,7 @@
     for (i = 0; i < [filters count]; i++){
         [appDelegate.managedObjectContext deleteObject:[filters objectAtIndex:i]];
     }
-
+    
     NSFetchRequest *brandsFilterRequest = [NSFetchRequest fetchRequestWithEntityName:CORE_DATA_ENTITY_BRANDS_FILTER];
     NSArray *brandsFilter = [appDelegate.managedObjectContext executeFetchRequest:brandsFilterRequest error:nil];
     for (i = 0; i < [brandsFilter count]; i++){
@@ -333,12 +333,33 @@
     for (i = 0; i < [priceFilter count]; i++){
         [appDelegate.managedObjectContext deleteObject:[priceFilter objectAtIndex:i]];
     }
-
+    
     
     [appDelegate.managedObjectContext save:nil];
-
+    
     
     [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
+- (IBAction)btnProceedToCartClicked:(id)sender {
+    
+    NSFetchRequest *bookingsRequest = [NSFetchRequest fetchRequestWithEntityName:CORE_DATA_ENTITY_BOOKINGS];
+    NSArray *bookings = [appDelegate.managedObjectContext executeFetchRequest:bookingsRequest error:nil];
+    
+    if ([bookings count] != nil){
+        
+        [self performSegueWithIdentifier:@"showCartSegue" sender:nil];
+        
+    }
+    
+    else{
+        
+        [self showFeedbackWithTitle:NSLocalizedString(@"FAILURE_HANDLER_TITLE", nil) andMessage:@"NO_BOOKINGS_DONE" andIsError:nil];
+        
+    }
+    
+    
+    
 }
 
 

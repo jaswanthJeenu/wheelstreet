@@ -23,5 +23,6 @@
 @property (weak, nonatomic) IBOutlet UIView *viewBtnCart;
 
 - (IBAction)btnBackClicked:(id)sender;
+- (IBAction)btnProceedToCartClicked:(id)sender;
 
 @end
