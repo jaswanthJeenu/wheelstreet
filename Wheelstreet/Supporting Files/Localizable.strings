@@ -1,10 +1,10 @@
-/* 
-  Localizable.strings
-  Wheelstreet
-
-  Created by Jaswanth Jeenu on 08/06/16.
-  Copyright © 2016 Bashar Technologies Pvt Ltd. All rights reserved.
-*/
+/*
+ Localizable.strings
+ Wheelstreet
+ 
+ Created by Jaswanth Jeenu on 08/06/16.
+ Copyright © 2016 Bashar Technologies Pvt Ltd. All rights reserved.
+ */
 
 "SIGNING_IN" = "Signing in";
 "LOGGING_OUT" = "Logging out";

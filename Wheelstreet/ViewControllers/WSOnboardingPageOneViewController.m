@@ -34,7 +34,7 @@
 }
 
 - (IBAction)btnNextClicked:(id)sender {
-//    [self performSegueWithIdentifier:@"showOnboardingPageTwoSegue" sender:nil];
+    //    [self performSegueWithIdentifier:@"showOnboardingPageTwoSegue" sender:nil];
     appDelegate.swipeTutorialPageIndex = 2;
 }
 @end

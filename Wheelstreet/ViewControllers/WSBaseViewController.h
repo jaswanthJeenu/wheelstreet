@@ -16,7 +16,7 @@
     AppDelegate *appDelegate;
     NSUserDefaults *defaults;
     MBProgressHUD *progressHUD;
-//    int swipeTutorialPageIndex;
+    //    int swipeTutorialPageIndex;
 }
 
 -(void) showProgressHudWithMessage:(NSString *) message;

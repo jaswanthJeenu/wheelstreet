@@ -2438,20 +2438,20 @@ We'll send you an OTP.</string>
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="khv-vb-dkk"/>
-                                        <exclude reference="8Ql-4t-Zih"/>
-                                        <exclude reference="kGC-DR-PMW"/>
                                         <exclude reference="3F1-Gs-sli"/>
                                         <exclude reference="WXW-hm-5b0"/>
                                         <exclude reference="Yyu-lu-YRV"/>
                                         <exclude reference="jnd-g0-7Ef"/>
                                         <exclude reference="pYk-33-SHR"/>
-                                        <exclude reference="NTg-7J-gMZ"/>
-                                        <exclude reference="aqF-Nc-TfT"/>
-                                        <exclude reference="dRr-6a-oPo"/>
                                         <exclude reference="B9Q-3M-aeJ"/>
                                         <exclude reference="ikB-gT-2eO"/>
                                         <exclude reference="tap-HU-WRW"/>
                                         <exclude reference="v7m-U0-pXg"/>
+                                        <exclude reference="NTg-7J-gMZ"/>
+                                        <exclude reference="aqF-Nc-TfT"/>
+                                        <exclude reference="dRr-6a-oPo"/>
+                                        <exclude reference="8Ql-4t-Zih"/>
+                                        <exclude reference="kGC-DR-PMW"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
@@ -2463,20 +2463,20 @@ We'll send you an OTP.</string>
                                     </mask>
                                     <mask key="constraints">
                                         <include reference="khv-vb-dkk"/>
-                                        <include reference="8Ql-4t-Zih"/>
-                                        <include reference="kGC-DR-PMW"/>
                                         <include reference="3F1-Gs-sli"/>
                                         <exclude reference="WXW-hm-5b0"/>
                                         <exclude reference="Yyu-lu-YRV"/>
                                         <include reference="jnd-g0-7Ef"/>
                                         <include reference="pYk-33-SHR"/>
-                                        <include reference="NTg-7J-gMZ"/>
-                                        <include reference="aqF-Nc-TfT"/>
-                                        <include reference="dRr-6a-oPo"/>
                                         <include reference="B9Q-3M-aeJ"/>
                                         <include reference="ikB-gT-2eO"/>
                                         <include reference="tap-HU-WRW"/>
                                         <include reference="v7m-U0-pXg"/>
+                                        <include reference="NTg-7J-gMZ"/>
+                                        <include reference="aqF-Nc-TfT"/>
+                                        <include reference="dRr-6a-oPo"/>
+                                        <include reference="8Ql-4t-Zih"/>
+                                        <include reference="kGC-DR-PMW"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -2669,26 +2669,23 @@ We'll send you an OTP.</string>
                                 <exclude reference="l1q-IR-gWR"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="QKd-RI-Dih"/>
-                                <exclude reference="hru-PN-1fU"/>
-                                <exclude reference="uus-DL-0eg"/>
-                                <exclude reference="9fe-kk-aSD"/>
-                                <exclude reference="Wel-0G-OY0"/>
-                                <exclude reference="rO0-zf-wVk"/>
+                                <exclude reference="ItI-Fz-gaz"/>
+                                <exclude reference="Jkv-ar-rXC"/>
+                                <exclude reference="2WB-ZW-QnU"/>
+                                <exclude reference="g8P-6h-rj5"/>
+                                <exclude reference="ggz-XC-gzi"/>
+                                <exclude reference="Vaf-PI-utB"/>
+                                <exclude reference="gLS-rN-8qy"/>
+                                <exclude reference="oHf-Ab-GrZ"/>
                                 <exclude reference="2vs-su-FCo"/>
                                 <exclude reference="GyU-4N-zX9"/>
                                 <exclude reference="v85-Qz-0A0"/>
-                                <exclude reference="EEu-u0-fyf"/>
-                                <exclude reference="KCF-2V-emo"/>
-                                <exclude reference="ORA-1a-JjZ"/>
-                                <exclude reference="TsV-gH-NeQ"/>
-                                <exclude reference="V6H-ee-fBN"/>
-                                <exclude reference="Wcb-In-Erh"/>
-                                <exclude reference="z4r-xE-xY4"/>
                                 <exclude reference="1KT-Ts-X5l"/>
                                 <exclude reference="U6e-rQ-QvN"/>
                                 <exclude reference="crw-uf-JEF"/>
                                 <exclude reference="pXs-Iz-uNK"/>
+                                <exclude reference="RuQ-CN-gxu"/>
+                                <exclude reference="dgb-x7-674"/>
                                 <exclude reference="2H9-gL-Anq"/>
                                 <exclude reference="2iH-kG-K7s"/>
                                 <exclude reference="5wF-5y-0GF"/>
@@ -2698,16 +2695,19 @@ We'll send you an OTP.</string>
                                 <exclude reference="UVv-w5-rnS"/>
                                 <exclude reference="fMx-fb-Nst"/>
                                 <exclude reference="wua-Ov-6fW"/>
-                                <exclude reference="2WB-ZW-QnU"/>
-                                <exclude reference="g8P-6h-rj5"/>
-                                <exclude reference="ggz-XC-gzi"/>
-                                <exclude reference="Vaf-PI-utB"/>
-                                <exclude reference="gLS-rN-8qy"/>
-                                <exclude reference="oHf-Ab-GrZ"/>
-                                <exclude reference="RuQ-CN-gxu"/>
-                                <exclude reference="dgb-x7-674"/>
-                                <exclude reference="ItI-Fz-gaz"/>
-                                <exclude reference="Jkv-ar-rXC"/>
+                                <exclude reference="QKd-RI-Dih"/>
+                                <exclude reference="hru-PN-1fU"/>
+                                <exclude reference="uus-DL-0eg"/>
+                                <exclude reference="9fe-kk-aSD"/>
+                                <exclude reference="Wel-0G-OY0"/>
+                                <exclude reference="rO0-zf-wVk"/>
+                                <exclude reference="EEu-u0-fyf"/>
+                                <exclude reference="KCF-2V-emo"/>
+                                <exclude reference="ORA-1a-JjZ"/>
+                                <exclude reference="TsV-gH-NeQ"/>
+                                <exclude reference="V6H-ee-fBN"/>
+                                <exclude reference="Wcb-In-Erh"/>
+                                <exclude reference="z4r-xE-xY4"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -2723,26 +2723,23 @@ We'll send you an OTP.</string>
                                 <include reference="l1q-IR-gWR"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="QKd-RI-Dih"/>
-                                <include reference="hru-PN-1fU"/>
-                                <include reference="uus-DL-0eg"/>
-                                <include reference="9fe-kk-aSD"/>
-                                <include reference="Wel-0G-OY0"/>
-                                <include reference="rO0-zf-wVk"/>
+                                <include reference="ItI-Fz-gaz"/>
+                                <include reference="Jkv-ar-rXC"/>
+                                <include reference="2WB-ZW-QnU"/>
+                                <include reference="g8P-6h-rj5"/>
+                                <include reference="ggz-XC-gzi"/>
+                                <include reference="Vaf-PI-utB"/>
+                                <include reference="gLS-rN-8qy"/>
+                                <include reference="oHf-Ab-GrZ"/>
                                 <include reference="2vs-su-FCo"/>
                                 <include reference="GyU-4N-zX9"/>
                                 <include reference="v85-Qz-0A0"/>
-                                <exclude reference="EEu-u0-fyf"/>
-                                <include reference="KCF-2V-emo"/>
-                                <include reference="ORA-1a-JjZ"/>
-                                <include reference="TsV-gH-NeQ"/>
-                                <include reference="V6H-ee-fBN"/>
-                                <include reference="Wcb-In-Erh"/>
-                                <exclude reference="z4r-xE-xY4"/>
                                 <include reference="1KT-Ts-X5l"/>
                                 <include reference="U6e-rQ-QvN"/>
                                 <include reference="crw-uf-JEF"/>
                                 <exclude reference="pXs-Iz-uNK"/>
+                                <include reference="RuQ-CN-gxu"/>
+                                <include reference="dgb-x7-674"/>
                                 <include reference="2H9-gL-Anq"/>
                                 <exclude reference="2iH-kG-K7s"/>
                                 <exclude reference="5wF-5y-0GF"/>
@@ -2752,16 +2749,19 @@ We'll send you an OTP.</string>
                                 <exclude reference="UVv-w5-rnS"/>
                                 <include reference="fMx-fb-Nst"/>
                                 <exclude reference="wua-Ov-6fW"/>
-                                <include reference="2WB-ZW-QnU"/>
-                                <include reference="g8P-6h-rj5"/>
-                                <include reference="ggz-XC-gzi"/>
-                                <include reference="Vaf-PI-utB"/>
-                                <include reference="gLS-rN-8qy"/>
-                                <include reference="oHf-Ab-GrZ"/>
-                                <include reference="RuQ-CN-gxu"/>
-                                <include reference="dgb-x7-674"/>
-                                <include reference="ItI-Fz-gaz"/>
-                                <include reference="Jkv-ar-rXC"/>
+                                <include reference="QKd-RI-Dih"/>
+                                <include reference="hru-PN-1fU"/>
+                                <include reference="uus-DL-0eg"/>
+                                <include reference="9fe-kk-aSD"/>
+                                <include reference="Wel-0G-OY0"/>
+                                <include reference="rO0-zf-wVk"/>
+                                <exclude reference="EEu-u0-fyf"/>
+                                <include reference="KCF-2V-emo"/>
+                                <include reference="ORA-1a-JjZ"/>
+                                <include reference="TsV-gH-NeQ"/>
+                                <include reference="V6H-ee-fBN"/>
+                                <include reference="Wcb-In-Erh"/>
+                                <exclude reference="z4r-xE-xY4"/>
                             </mask>
                         </variation>
                     </view>
@@ -2808,6 +2808,7 @@ We'll send you an OTP.</string>
                         <viewControllerLayoutGuide type="bottom" id="vB5-ev-eqi"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="sli-bK-FAA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bikes list coming soon..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQk-Hj-2jk">
@@ -2830,10 +2831,10 @@ We'll send you an OTP.</string>
                                 <exclude reference="UQk-Hj-2jk"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="Y7O-ue-vVn"/>
                                 <exclude reference="ANK-Lm-Hi9"/>
                                 <exclude reference="nDG-zA-6Am"/>
                                 <exclude reference="o9n-oo-tFh"/>
-                                <exclude reference="Y7O-ue-vVn"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -2841,10 +2842,10 @@ We'll send you an OTP.</string>
                                 <include reference="UQk-Hj-2jk"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="Y7O-ue-vVn"/>
                                 <include reference="ANK-Lm-Hi9"/>
                                 <include reference="nDG-zA-6Am"/>
                                 <include reference="o9n-oo-tFh"/>
-                                <include reference="Y7O-ue-vVn"/>
                             </mask>
                         </variation>
                     </view>

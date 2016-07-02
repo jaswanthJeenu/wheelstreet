@@ -107,7 +107,27 @@
 		F20A4B8A1D093FF400BCC203 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20A4B891D093FF400BCC203 /* CoreGraphics.framework */; };
 		F20A4B8C1D09447800BCC203 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20A4B8B1D09447800BCC203 /* QuartzCore.framework */; };
 		F20A4B8F1D09481800BCC203 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F20A4B8E1D09481800BCC203 /* libicucore.tbd */; };
-		F2100BD71D18169200FE7773 /* AvailableBikesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2100BD61D18169200FE7773 /* AvailableBikesViewController.m */; };
+		F23D878C1D277BB700EA85C8 /* WSRoundedRectTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F23D87811D277BB700EA85C8 /* WSRoundedRectTextField.m */; };
+		F23D878D1D277BB700EA85C8 /* WSBikeDisplayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F23D87831D277BB700EA85C8 /* WSBikeDisplayTableViewCell.m */; };
+		F23D878E1D277BB700EA85C8 /* WSBikeLocationsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F23D87851D277BB700EA85C8 /* WSBikeLocationsTableViewCell.m */; };
+		F23D878F1D277BB700EA85C8 /* WSFiltersTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F23D87871D277BB700EA85C8 /* WSFiltersTableViewCell.m */; };
+		F23D87901D277BB700EA85C8 /* WSCartBikeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F23D87891D277BB700EA85C8 /* WSCartBikeTableViewCell.m */; };
+		F23D87911D277BB700EA85C8 /* WSCartLocationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F23D878B1D277BB700EA85C8 /* WSCartLocationTableViewCell.m */; };
+		F23D87A81D277C6200EA85C8 /* Bookings+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F23D87941D277C6200EA85C8 /* Bookings+CoreDataProperties.m */; };
+		F23D87A91D277C6200EA85C8 /* Bookings.m in Sources */ = {isa = PBXBuildFile; fileRef = F23D87961D277C6200EA85C8 /* Bookings.m */; };
+		F23D87AA1D277C6200EA85C8 /* Bikes+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F23D87981D277C6200EA85C8 /* Bikes+CoreDataProperties.m */; };
+		F23D87AB1D277C6200EA85C8 /* Bikes.m in Sources */ = {isa = PBXBuildFile; fileRef = F23D879A1D277C6200EA85C8 /* Bikes.m */; };
+		F23D87AC1D277C6200EA85C8 /* Filters+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F23D879C1D277C6200EA85C8 /* Filters+CoreDataProperties.m */; };
+		F23D87AD1D277C6200EA85C8 /* Filters.m in Sources */ = {isa = PBXBuildFile; fileRef = F23D879E1D277C6200EA85C8 /* Filters.m */; };
+		F23D87AE1D277C6200EA85C8 /* PriceFilter+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F23D87A01D277C6200EA85C8 /* PriceFilter+CoreDataProperties.m */; };
+		F23D87AF1D277C6200EA85C8 /* PriceFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = F23D87A21D277C6200EA85C8 /* PriceFilter.m */; };
+		F23D87B01D277C6200EA85C8 /* BrandsFilter+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F23D87A41D277C6200EA85C8 /* BrandsFilter+CoreDataProperties.m */; };
+		F23D87B11D277C6200EA85C8 /* BrandsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = F23D87A61D277C6200EA85C8 /* BrandsFilter.m */; };
+		F23D87BB1D277F3C00EA85C8 /* WSDisplayBikesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F23D87B41D277F3C00EA85C8 /* WSDisplayBikesViewController.m */; };
+		F23D87BC1D277F3C00EA85C8 /* WSFiltersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F23D87B61D277F3C00EA85C8 /* WSFiltersViewController.m */; };
+		F23D87BD1D277F3C00EA85C8 /* WSLocationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F23D87B81D277F3C00EA85C8 /* WSLocationsViewController.m */; };
+		F23D87BE1D277F3C00EA85C8 /* WSCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F23D87BA1D277F3C00EA85C8 /* WSCartViewController.m */; };
+		F23D87C01D2783FD00EA85C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23D87BF1D2783FD00EA85C8 /* Main.storyboard */; };
 		F24AE2581D0A906700048A38 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24AE2561D0A906700048A38 /* Crashlytics.framework */; };
 		F24AE2591D0A906700048A38 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24AE2571D0A906700048A38 /* Fabric.framework */; };
 		F260DE241D0195A600D89EBF /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F260DE181D0195A600D89EBF /* AFHTTPSessionManager.m */; };
@@ -142,33 +162,9 @@
 		F288E8DF1D13C053008498F5 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F288E8DE1D13C053008498F5 /* CoreFoundation.framework */; };
 		F288E8E11D13C0A2008498F5 /* libobjc.A.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F288E8E01D13C0A2008498F5 /* libobjc.A.tbd */; };
 		F290189E1D1288500073135F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F290189D1D1288500073135F /* CoreLocation.framework */; };
-		F2A26F631D11400400312577 /* DSLCalendarDayCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A26F451D11400400312577 /* DSLCalendarDayCalloutView.m */; };
-		F2A26F641D11400400312577 /* DSLCalendarDayCalloutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2A26F461D11400400312577 /* DSLCalendarDayCalloutView.xib */; };
-		F2A26F651D11400400312577 /* DSLCalendarDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A26F481D11400400312577 /* DSLCalendarDayView.m */; };
-		F2A26F661D11400400312577 /* DSLCalendarMonthSelectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A26F4A1D11400400312577 /* DSLCalendarMonthSelectorView.m */; };
-		F2A26F671D11400400312577 /* DSLCalendarMonthSelectorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2A26F4B1D11400400312577 /* DSLCalendarMonthSelectorView.xib */; };
-		F2A26F681D11400400312577 /* DSLCalendarMonthView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A26F4D1D11400400312577 /* DSLCalendarMonthView.m */; };
-		F2A26F691D11400400312577 /* DSLCalendarRange.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A26F4F1D11400400312577 /* DSLCalendarRange.m */; };
-		F2A26F6A1D11400400312577 /* DSLCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A26F511D11400400312577 /* DSLCalendarView.m */; };
-		F2A26F6B1D11400400312577 /* DSLCalendar-nextMonth.png in Resources */ = {isa = PBXBuildFile; fileRef = F2A26F531D11400400312577 /* DSLCalendar-nextMonth.png */; };
-		F2A26F6C1D11400400312577 /* DSLCalendar-nextMonth@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2A26F541D11400400312577 /* DSLCalendar-nextMonth@2x.png */; };
-		F2A26F6D1D11400400312577 /* DSLCalendar-previousMonth.png in Resources */ = {isa = PBXBuildFile; fileRef = F2A26F551D11400400312577 /* DSLCalendar-previousMonth.png */; };
-		F2A26F6E1D11400400312577 /* DSLCalendar-previousMonth@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2A26F561D11400400312577 /* DSLCalendar-previousMonth@2x.png */; };
-		F2A26F6F1D11400400312577 /* DSLCalendarDayCallout.png in Resources */ = {isa = PBXBuildFile; fileRef = F2A26F571D11400400312577 /* DSLCalendarDayCallout.png */; };
-		F2A26F701D11400400312577 /* DSLCalendarDayCallout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2A26F581D11400400312577 /* DSLCalendarDayCallout@2x.png */; };
-		F2A26F711D11400400312577 /* DSLCalendarDaySelection-left.png in Resources */ = {isa = PBXBuildFile; fileRef = F2A26F591D11400400312577 /* DSLCalendarDaySelection-left.png */; };
-		F2A26F721D11400400312577 /* DSLCalendarDaySelection-left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2A26F5A1D11400400312577 /* DSLCalendarDaySelection-left@2x.png */; };
-		F2A26F731D11400400312577 /* DSLCalendarDaySelection-middle.png in Resources */ = {isa = PBXBuildFile; fileRef = F2A26F5B1D11400400312577 /* DSLCalendarDaySelection-middle.png */; };
-		F2A26F741D11400400312577 /* DSLCalendarDaySelection-middle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2A26F5C1D11400400312577 /* DSLCalendarDaySelection-middle@2x.png */; };
-		F2A26F751D11400400312577 /* DSLCalendarDaySelection-right.png in Resources */ = {isa = PBXBuildFile; fileRef = F2A26F5D1D11400400312577 /* DSLCalendarDaySelection-right.png */; };
-		F2A26F761D11400400312577 /* DSLCalendarDaySelection-right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2A26F5E1D11400400312577 /* DSLCalendarDaySelection-right@2x.png */; };
-		F2A26F771D11400400312577 /* DSLCalendarDaySelection.png in Resources */ = {isa = PBXBuildFile; fileRef = F2A26F5F1D11400400312577 /* DSLCalendarDaySelection.png */; };
-		F2A26F781D11400400312577 /* DSLCalendarDaySelection@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2A26F601D11400400312577 /* DSLCalendarDaySelection@2x.png */; };
-		F2A26F791D11400400312577 /* NSDate+DSLCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A26F621D11400400312577 /* NSDate+DSLCalendarView.m */; };
 		F2A26F811D118D7500312577 /* WSInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A26F801D118D7500312577 /* WSInfoViewController.m */; };
 		F2A4681A1CFF1501009DA69C /* WSOTPVerificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A468191CFF1501009DA69C /* WSOTPVerificationViewController.m */; };
 		F2A4681D1CFF1D87009DA69C /* WSNewPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A4681C1CFF1D87009DA69C /* WSNewPasswordViewController.m */; };
-		F2CD8A811D12BE6C00B75CCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2CD8A7F1D12BE6C00B75CCD /* Main.storyboard */; };
 		F2CD8A831D12DDA900B75CCD /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2CD8A821D12DDA900B75CCD /* CoreBluetooth.framework */; };
 		F2FADB2B1D0FDCB1000BF63D /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FADB261D0FDCB1000BF63D /* SWRevealViewController.m */; };
 		F2FADB2C1D0FDCB1000BF63D /* WSMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FADB281D0FDCB1000BF63D /* WSMenuViewController.m */; };
@@ -359,8 +355,47 @@
 		F20A4B891D093FF400BCC203 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F20A4B8B1D09447800BCC203 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F20A4B8E1D09481800BCC203 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
-		F2100BD51D18169200FE7773 /* AvailableBikesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvailableBikesViewController.h; sourceTree = "<group>"; };
-		F2100BD61D18169200FE7773 /* AvailableBikesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvailableBikesViewController.m; sourceTree = "<group>"; };
+		F23D87801D277BB700EA85C8 /* WSRoundedRectTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSRoundedRectTextField.h; sourceTree = "<group>"; };
+		F23D87811D277BB700EA85C8 /* WSRoundedRectTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSRoundedRectTextField.m; sourceTree = "<group>"; };
+		F23D87821D277BB700EA85C8 /* WSBikeDisplayTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSBikeDisplayTableViewCell.h; sourceTree = "<group>"; };
+		F23D87831D277BB700EA85C8 /* WSBikeDisplayTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSBikeDisplayTableViewCell.m; sourceTree = "<group>"; };
+		F23D87841D277BB700EA85C8 /* WSBikeLocationsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSBikeLocationsTableViewCell.h; sourceTree = "<group>"; };
+		F23D87851D277BB700EA85C8 /* WSBikeLocationsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSBikeLocationsTableViewCell.m; sourceTree = "<group>"; };
+		F23D87861D277BB700EA85C8 /* WSFiltersTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSFiltersTableViewCell.h; sourceTree = "<group>"; };
+		F23D87871D277BB700EA85C8 /* WSFiltersTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSFiltersTableViewCell.m; sourceTree = "<group>"; };
+		F23D87881D277BB700EA85C8 /* WSCartBikeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSCartBikeTableViewCell.h; sourceTree = "<group>"; };
+		F23D87891D277BB700EA85C8 /* WSCartBikeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSCartBikeTableViewCell.m; sourceTree = "<group>"; };
+		F23D878A1D277BB700EA85C8 /* WSCartLocationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSCartLocationTableViewCell.h; sourceTree = "<group>"; };
+		F23D878B1D277BB700EA85C8 /* WSCartLocationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSCartLocationTableViewCell.m; sourceTree = "<group>"; };
+		F23D87931D277C6200EA85C8 /* Bookings+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bookings+CoreDataProperties.h"; path = "../Bookings+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F23D87941D277C6200EA85C8 /* Bookings+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Bookings+CoreDataProperties.m"; path = "../Bookings+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F23D87951D277C6200EA85C8 /* Bookings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bookings.h; path = ../Bookings.h; sourceTree = "<group>"; };
+		F23D87961D277C6200EA85C8 /* Bookings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Bookings.m; path = ../Bookings.m; sourceTree = "<group>"; };
+		F23D87971D277C6200EA85C8 /* Bikes+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bikes+CoreDataProperties.h"; path = "../Bikes+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F23D87981D277C6200EA85C8 /* Bikes+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Bikes+CoreDataProperties.m"; path = "../Bikes+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F23D87991D277C6200EA85C8 /* Bikes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bikes.h; path = ../Bikes.h; sourceTree = "<group>"; };
+		F23D879A1D277C6200EA85C8 /* Bikes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Bikes.m; path = ../Bikes.m; sourceTree = "<group>"; };
+		F23D879B1D277C6200EA85C8 /* Filters+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Filters+CoreDataProperties.h"; path = "../Filters+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F23D879C1D277C6200EA85C8 /* Filters+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Filters+CoreDataProperties.m"; path = "../Filters+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F23D879D1D277C6200EA85C8 /* Filters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Filters.h; path = ../Filters.h; sourceTree = "<group>"; };
+		F23D879E1D277C6200EA85C8 /* Filters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Filters.m; path = ../Filters.m; sourceTree = "<group>"; };
+		F23D879F1D277C6200EA85C8 /* PriceFilter+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PriceFilter+CoreDataProperties.h"; path = "../PriceFilter+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F23D87A01D277C6200EA85C8 /* PriceFilter+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "PriceFilter+CoreDataProperties.m"; path = "../PriceFilter+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F23D87A11D277C6200EA85C8 /* PriceFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PriceFilter.h; path = ../PriceFilter.h; sourceTree = "<group>"; };
+		F23D87A21D277C6200EA85C8 /* PriceFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PriceFilter.m; path = ../PriceFilter.m; sourceTree = "<group>"; };
+		F23D87A31D277C6200EA85C8 /* BrandsFilter+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "BrandsFilter+CoreDataProperties.h"; path = "../BrandsFilter+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F23D87A41D277C6200EA85C8 /* BrandsFilter+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "BrandsFilter+CoreDataProperties.m"; path = "../BrandsFilter+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F23D87A51D277C6200EA85C8 /* BrandsFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrandsFilter.h; path = ../BrandsFilter.h; sourceTree = "<group>"; };
+		F23D87A61D277C6200EA85C8 /* BrandsFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrandsFilter.m; path = ../BrandsFilter.m; sourceTree = "<group>"; };
+		F23D87B31D277F3C00EA85C8 /* WSDisplayBikesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSDisplayBikesViewController.h; sourceTree = "<group>"; };
+		F23D87B41D277F3C00EA85C8 /* WSDisplayBikesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSDisplayBikesViewController.m; sourceTree = "<group>"; };
+		F23D87B51D277F3C00EA85C8 /* WSFiltersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSFiltersViewController.h; sourceTree = "<group>"; };
+		F23D87B61D277F3C00EA85C8 /* WSFiltersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSFiltersViewController.m; sourceTree = "<group>"; };
+		F23D87B71D277F3C00EA85C8 /* WSLocationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSLocationsViewController.h; sourceTree = "<group>"; };
+		F23D87B81D277F3C00EA85C8 /* WSLocationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSLocationsViewController.m; sourceTree = "<group>"; };
+		F23D87B91D277F3C00EA85C8 /* WSCartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSCartViewController.h; sourceTree = "<group>"; };
+		F23D87BA1D277F3C00EA85C8 /* WSCartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSCartViewController.m; sourceTree = "<group>"; };
+		F23D87BF1D2783FD00EA85C8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F24AE2561D0A906700048A38 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		F24AE2571D0A906700048A38 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		F24AE2621D0A94E700048A38 /* WSConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSConfig.h; sourceTree = "<group>"; };
@@ -423,43 +458,12 @@
 		F288E8DE1D13C053008498F5 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		F288E8E01D13C0A2008498F5 /* libobjc.A.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libobjc.A.tbd; path = usr/lib/libobjc.A.tbd; sourceTree = SDKROOT; };
 		F290189D1D1288500073135F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		F2A26F441D11400400312577 /* DSLCalendarDayCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLCalendarDayCalloutView.h; sourceTree = "<group>"; };
-		F2A26F451D11400400312577 /* DSLCalendarDayCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLCalendarDayCalloutView.m; sourceTree = "<group>"; };
-		F2A26F461D11400400312577 /* DSLCalendarDayCalloutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DSLCalendarDayCalloutView.xib; sourceTree = "<group>"; };
-		F2A26F471D11400400312577 /* DSLCalendarDayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLCalendarDayView.h; sourceTree = "<group>"; };
-		F2A26F481D11400400312577 /* DSLCalendarDayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLCalendarDayView.m; sourceTree = "<group>"; };
-		F2A26F491D11400400312577 /* DSLCalendarMonthSelectorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLCalendarMonthSelectorView.h; sourceTree = "<group>"; };
-		F2A26F4A1D11400400312577 /* DSLCalendarMonthSelectorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLCalendarMonthSelectorView.m; sourceTree = "<group>"; };
-		F2A26F4B1D11400400312577 /* DSLCalendarMonthSelectorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DSLCalendarMonthSelectorView.xib; sourceTree = "<group>"; };
-		F2A26F4C1D11400400312577 /* DSLCalendarMonthView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLCalendarMonthView.h; sourceTree = "<group>"; };
-		F2A26F4D1D11400400312577 /* DSLCalendarMonthView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLCalendarMonthView.m; sourceTree = "<group>"; };
-		F2A26F4E1D11400400312577 /* DSLCalendarRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLCalendarRange.h; sourceTree = "<group>"; };
-		F2A26F4F1D11400400312577 /* DSLCalendarRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLCalendarRange.m; sourceTree = "<group>"; };
-		F2A26F501D11400400312577 /* DSLCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLCalendarView.h; sourceTree = "<group>"; };
-		F2A26F511D11400400312577 /* DSLCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLCalendarView.m; sourceTree = "<group>"; };
-		F2A26F531D11400400312577 /* DSLCalendar-nextMonth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DSLCalendar-nextMonth.png"; sourceTree = "<group>"; };
-		F2A26F541D11400400312577 /* DSLCalendar-nextMonth@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DSLCalendar-nextMonth@2x.png"; sourceTree = "<group>"; };
-		F2A26F551D11400400312577 /* DSLCalendar-previousMonth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DSLCalendar-previousMonth.png"; sourceTree = "<group>"; };
-		F2A26F561D11400400312577 /* DSLCalendar-previousMonth@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DSLCalendar-previousMonth@2x.png"; sourceTree = "<group>"; };
-		F2A26F571D11400400312577 /* DSLCalendarDayCallout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DSLCalendarDayCallout.png; sourceTree = "<group>"; };
-		F2A26F581D11400400312577 /* DSLCalendarDayCallout@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DSLCalendarDayCallout@2x.png"; sourceTree = "<group>"; };
-		F2A26F591D11400400312577 /* DSLCalendarDaySelection-left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DSLCalendarDaySelection-left.png"; sourceTree = "<group>"; };
-		F2A26F5A1D11400400312577 /* DSLCalendarDaySelection-left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DSLCalendarDaySelection-left@2x.png"; sourceTree = "<group>"; };
-		F2A26F5B1D11400400312577 /* DSLCalendarDaySelection-middle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DSLCalendarDaySelection-middle.png"; sourceTree = "<group>"; };
-		F2A26F5C1D11400400312577 /* DSLCalendarDaySelection-middle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DSLCalendarDaySelection-middle@2x.png"; sourceTree = "<group>"; };
-		F2A26F5D1D11400400312577 /* DSLCalendarDaySelection-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DSLCalendarDaySelection-right.png"; sourceTree = "<group>"; };
-		F2A26F5E1D11400400312577 /* DSLCalendarDaySelection-right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DSLCalendarDaySelection-right@2x.png"; sourceTree = "<group>"; };
-		F2A26F5F1D11400400312577 /* DSLCalendarDaySelection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DSLCalendarDaySelection.png; sourceTree = "<group>"; };
-		F2A26F601D11400400312577 /* DSLCalendarDaySelection@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DSLCalendarDaySelection@2x.png"; sourceTree = "<group>"; };
-		F2A26F611D11400400312577 /* NSDate+DSLCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DSLCalendarView.h"; sourceTree = "<group>"; };
-		F2A26F621D11400400312577 /* NSDate+DSLCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DSLCalendarView.m"; sourceTree = "<group>"; };
 		F2A26F7F1D118D7500312577 /* WSInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSInfoViewController.h; sourceTree = "<group>"; };
 		F2A26F801D118D7500312577 /* WSInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSInfoViewController.m; sourceTree = "<group>"; };
 		F2A468181CFF1501009DA69C /* WSOTPVerificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSOTPVerificationViewController.h; sourceTree = "<group>"; };
 		F2A468191CFF1501009DA69C /* WSOTPVerificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = WSOTPVerificationViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		F2A4681B1CFF1D87009DA69C /* WSNewPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSNewPasswordViewController.h; sourceTree = "<group>"; };
 		F2A4681C1CFF1D87009DA69C /* WSNewPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = WSNewPasswordViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		F2CD8A801D12BE6C00B75CCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2CD8A821D12DDA900B75CCD /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		F2FADB251D0FDCB1000BF63D /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		F2FADB261D0FDCB1000BF63D /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -755,10 +759,44 @@
 		F2100BD41D18163E00FE7773 /* Available Bikes Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F2100BD51D18169200FE7773 /* AvailableBikesViewController.h */,
-				F2100BD61D18169200FE7773 /* AvailableBikesViewController.m */,
+				F23D87B31D277F3C00EA85C8 /* WSDisplayBikesViewController.h */,
+				F23D87B41D277F3C00EA85C8 /* WSDisplayBikesViewController.m */,
+				F23D87B51D277F3C00EA85C8 /* WSFiltersViewController.h */,
+				F23D87B61D277F3C00EA85C8 /* WSFiltersViewController.m */,
+				F23D87B71D277F3C00EA85C8 /* WSLocationsViewController.h */,
+				F23D87B81D277F3C00EA85C8 /* WSLocationsViewController.m */,
+				F23D87B91D277F3C00EA85C8 /* WSCartViewController.h */,
+				F23D87BA1D277F3C00EA85C8 /* WSCartViewController.m */,
 			);
 			name = "Available Bikes Controller";
+			sourceTree = "<group>";
+		};
+		F23D87B21D277C6A00EA85C8 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				F262CF991CFEE3EA00D1FC03 /* Wheelstreet.xcdatamodeld */,
+				F23D87931D277C6200EA85C8 /* Bookings+CoreDataProperties.h */,
+				F23D87941D277C6200EA85C8 /* Bookings+CoreDataProperties.m */,
+				F23D87951D277C6200EA85C8 /* Bookings.h */,
+				F23D87961D277C6200EA85C8 /* Bookings.m */,
+				F23D87971D277C6200EA85C8 /* Bikes+CoreDataProperties.h */,
+				F23D87981D277C6200EA85C8 /* Bikes+CoreDataProperties.m */,
+				F23D87991D277C6200EA85C8 /* Bikes.h */,
+				F23D879A1D277C6200EA85C8 /* Bikes.m */,
+				F23D879B1D277C6200EA85C8 /* Filters+CoreDataProperties.h */,
+				F23D879C1D277C6200EA85C8 /* Filters+CoreDataProperties.m */,
+				F23D879D1D277C6200EA85C8 /* Filters.h */,
+				F23D879E1D277C6200EA85C8 /* Filters.m */,
+				F23D879F1D277C6200EA85C8 /* PriceFilter+CoreDataProperties.h */,
+				F23D87A01D277C6200EA85C8 /* PriceFilter+CoreDataProperties.m */,
+				F23D87A11D277C6200EA85C8 /* PriceFilter.h */,
+				F23D87A21D277C6200EA85C8 /* PriceFilter.m */,
+				F23D87A31D277C6200EA85C8 /* BrandsFilter+CoreDataProperties.h */,
+				F23D87A41D277C6200EA85C8 /* BrandsFilter+CoreDataProperties.m */,
+				F23D87A51D277C6200EA85C8 /* BrandsFilter.h */,
+				F23D87A61D277C6200EA85C8 /* BrandsFilter.m */,
+			);
+			name = "Core Data";
 			sourceTree = "<group>";
 		};
 		F24AE2551D0A906700048A38 /* Crashlytics */ = {
@@ -888,12 +926,12 @@
 				F26C09691D02F38B003D9BCF /* CustomControls */,
 				F262CFE01CFF029000D1FC03 /* Misc */,
 				F262CFDB1CFF028500D1FC03 /* Libs */,
+				F23D87B21D277C6A00EA85C8 /* Core Data */,
 				F262CFD71CFF026700D1FC03 /* ViewControllers */,
 				F262CF9C1CFEE3EA00D1FC03 /* Assets.xcassets */,
-				F2CD8A7F1D12BE6C00B75CCD /* Main.storyboard */,
+				F23D87BF1D2783FD00EA85C8 /* Main.storyboard */,
 				F262CF9E1CFEE3EA00D1FC03 /* LaunchScreen.storyboard */,
 				F262CFA11CFEE3EA00D1FC03 /* Info.plist */,
-				F262CF991CFEE3EA00D1FC03 /* Wheelstreet.xcdatamodeld */,
 				F262CFED1CFF051800D1FC03 /* Wheelstreet-PrefixHeader.pch */,
 				F262CF8D1CFEE3EA00D1FC03 /* Supporting Files */,
 			);
@@ -927,7 +965,6 @@
 		F262CFDB1CFF028500D1FC03 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
-				F2A26F431D11400400312577 /* DSLCalendarView */,
 				F2FADB521D102464000BF63D /* MVPlaceSearchTextField */,
 				F2FADB3D1D0FE71A000BF63D /* FacebookSDK */,
 				F2FADB3A1D0FE66D000BF63D /* GoogleMapsSDK */,
@@ -972,53 +1009,20 @@
 				F26C096B1D02F39F003D9BCF /* WSTextField.m */,
 				F2FADB371D0FDDB7000BF63D /* UINavigationController+TransparentNavigationController.h */,
 				F2FADB381D0FDDB7000BF63D /* UINavigationController+TransparentNavigationController.m */,
+				F23D87801D277BB700EA85C8 /* WSRoundedRectTextField.h */,
+				F23D87811D277BB700EA85C8 /* WSRoundedRectTextField.m */,
+				F23D87821D277BB700EA85C8 /* WSBikeDisplayTableViewCell.h */,
+				F23D87831D277BB700EA85C8 /* WSBikeDisplayTableViewCell.m */,
+				F23D87841D277BB700EA85C8 /* WSBikeLocationsTableViewCell.h */,
+				F23D87851D277BB700EA85C8 /* WSBikeLocationsTableViewCell.m */,
+				F23D87861D277BB700EA85C8 /* WSFiltersTableViewCell.h */,
+				F23D87871D277BB700EA85C8 /* WSFiltersTableViewCell.m */,
+				F23D87881D277BB700EA85C8 /* WSCartBikeTableViewCell.h */,
+				F23D87891D277BB700EA85C8 /* WSCartBikeTableViewCell.m */,
+				F23D878A1D277BB700EA85C8 /* WSCartLocationTableViewCell.h */,
+				F23D878B1D277BB700EA85C8 /* WSCartLocationTableViewCell.m */,
 			);
 			path = CustomControls;
-			sourceTree = "<group>";
-		};
-		F2A26F431D11400400312577 /* DSLCalendarView */ = {
-			isa = PBXGroup;
-			children = (
-				F2A26F441D11400400312577 /* DSLCalendarDayCalloutView.h */,
-				F2A26F451D11400400312577 /* DSLCalendarDayCalloutView.m */,
-				F2A26F461D11400400312577 /* DSLCalendarDayCalloutView.xib */,
-				F2A26F471D11400400312577 /* DSLCalendarDayView.h */,
-				F2A26F481D11400400312577 /* DSLCalendarDayView.m */,
-				F2A26F491D11400400312577 /* DSLCalendarMonthSelectorView.h */,
-				F2A26F4A1D11400400312577 /* DSLCalendarMonthSelectorView.m */,
-				F2A26F4B1D11400400312577 /* DSLCalendarMonthSelectorView.xib */,
-				F2A26F4C1D11400400312577 /* DSLCalendarMonthView.h */,
-				F2A26F4D1D11400400312577 /* DSLCalendarMonthView.m */,
-				F2A26F4E1D11400400312577 /* DSLCalendarRange.h */,
-				F2A26F4F1D11400400312577 /* DSLCalendarRange.m */,
-				F2A26F501D11400400312577 /* DSLCalendarView.h */,
-				F2A26F511D11400400312577 /* DSLCalendarView.m */,
-				F2A26F521D11400400312577 /* Images */,
-				F2A26F611D11400400312577 /* NSDate+DSLCalendarView.h */,
-				F2A26F621D11400400312577 /* NSDate+DSLCalendarView.m */,
-			);
-			path = DSLCalendarView;
-			sourceTree = "<group>";
-		};
-		F2A26F521D11400400312577 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				F2A26F531D11400400312577 /* DSLCalendar-nextMonth.png */,
-				F2A26F541D11400400312577 /* DSLCalendar-nextMonth@2x.png */,
-				F2A26F551D11400400312577 /* DSLCalendar-previousMonth.png */,
-				F2A26F561D11400400312577 /* DSLCalendar-previousMonth@2x.png */,
-				F2A26F571D11400400312577 /* DSLCalendarDayCallout.png */,
-				F2A26F581D11400400312577 /* DSLCalendarDayCallout@2x.png */,
-				F2A26F591D11400400312577 /* DSLCalendarDaySelection-left.png */,
-				F2A26F5A1D11400400312577 /* DSLCalendarDaySelection-left@2x.png */,
-				F2A26F5B1D11400400312577 /* DSLCalendarDaySelection-middle.png */,
-				F2A26F5C1D11400400312577 /* DSLCalendarDaySelection-middle@2x.png */,
-				F2A26F5D1D11400400312577 /* DSLCalendarDaySelection-right.png */,
-				F2A26F5E1D11400400312577 /* DSLCalendarDaySelection-right@2x.png */,
-				F2A26F5F1D11400400312577 /* DSLCalendarDaySelection.png */,
-				F2A26F601D11400400312577 /* DSLCalendarDaySelection@2x.png */,
-			);
-			path = Images;
 			sourceTree = "<group>";
 		};
 		F2FADB3A1D0FE66D000BF63D /* GoogleMapsSDK */ = {
@@ -1127,10 +1131,9 @@
 			files = (
 				F20A4A7E1D081D8B00BCC203 /* Localizable.strings in Resources */,
 				F20A4B2F1D093EDD00BCC203 /* MPDismissKeyboard.png in Resources */,
-				F2CD8A811D12BE6C00B75CCD /* Main.storyboard in Resources */,
 				F20A4B2E1D093EDD00BCC203 /* MPCloseButton@3x.png in Resources */,
+				F23D87C01D2783FD00EA85C8 /* Main.storyboard in Resources */,
 				F20A4B281D093EDD00BCC203 /* MPArrowRight.png in Resources */,
-				F2A26F701D11400400312577 /* DSLCalendarDayCallout@2x.png in Resources */,
 				F20A4B261D093EDD00BCC203 /* MPArrowLeft.png in Resources */,
 				F260DE331D01AA5500D89EBF /* Notes.txt in Resources */,
 				F20A4B321D093EDD00BCC203 /* MPLogo@2x.png in Resources */,
@@ -1138,32 +1141,17 @@
 				F20A4B561D093EDD00BCC203 /* MPNotification~iphonelandscape.storyboard in Resources */,
 				F262CFA01CFEE3EA00D1FC03 /* LaunchScreen.storyboard in Resources */,
 				F262CF9D1CFEE3EA00D1FC03 /* Assets.xcassets in Resources */,
-				F2A26F761D11400400312577 /* DSLCalendarDaySelection-right@2x.png in Resources */,
 				F20A4B2B1D093EDD00BCC203 /* MPCheckmark@2x.png in Resources */,
 				F20A4B2A1D093EDD00BCC203 /* MPCheckmark.png in Resources */,
-				F2A26F6C1D11400400312577 /* DSLCalendar-nextMonth@2x.png in Resources */,
 				F20A4B7A1D093EDD00BCC203 /* test_variant.json in Resources */,
 				F20A4B2D1D093EDD00BCC203 /* MPCloseButton@2x.png in Resources */,
-				F2A26F731D11400400312577 /* DSLCalendarDaySelection-middle.png in Resources */,
-				F2A26F671D11400400312577 /* DSLCalendarMonthSelectorView.xib in Resources */,
-				F2A26F6D1D11400400312577 /* DSLCalendar-previousMonth.png in Resources */,
-				F2A26F6E1D11400400312577 /* DSLCalendar-previousMonth@2x.png in Resources */,
 				F20A4B291D093EDD00BCC203 /* MPArrowRight@2x.png in Resources */,
-				F2A26F781D11400400312577 /* DSLCalendarDaySelection@2x.png in Resources */,
 				F20A4B271D093EDD00BCC203 /* MPArrowLeft@2x.png in Resources */,
-				F2A26F6B1D11400400312577 /* DSLCalendar-nextMonth.png in Resources */,
-				F2A26F711D11400400312577 /* DSLCalendarDaySelection-left.png in Resources */,
 				F20A4B791D093EDD00BCC203 /* snapshot_config.json in Resources */,
-				F2A26F771D11400400312577 /* DSLCalendarDaySelection.png in Resources */,
 				F20A4B641D093EDD00BCC203 /* MPSurvey.storyboard in Resources */,
-				F2A26F721D11400400312577 /* DSLCalendarDaySelection-left@2x.png in Resources */,
-				F2A26F6F1D11400400312577 /* DSLCalendarDayCallout.png in Resources */,
 				F20A4B571D093EDD00BCC203 /* MPNotification~iphoneportrait.storyboard in Resources */,
 				F20A4B2C1D093EDD00BCC203 /* MPCloseButton.png in Resources */,
-				F2A26F751D11400400312577 /* DSLCalendarDaySelection-right.png in Resources */,
 				F20A4B311D093EDD00BCC203 /* MPLogo.png in Resources */,
-				F2A26F741D11400400312577 /* DSLCalendarDaySelection-middle@2x.png in Resources */,
-				F2A26F641D11400400312577 /* DSLCalendarDayCalloutView.xib in Resources */,
 				F20A4B301D093EDD00BCC203 /* MPDismissKeyboard@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1192,7 +1180,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2FADB631D102464000BF63D /* MVPlaceSearchTextField.m in Sources */,
+				F23D87BD1D277F3C00EA85C8 /* WSLocationsViewController.m in Sources */,
 				F20A4B361D093EDD00BCC203 /* MixpanelExceptionHandler.m in Sources */,
+				F23D87AF1D277C6200EA85C8 /* PriceFilter.m in Sources */,
+				F23D878F1D277BB700EA85C8 /* WSFiltersTableViewCell.m in Sources */,
 				F20A4B3A1D093EDD00BCC203 /* MPABTestDesignerChangeResponseMessage.m in Sources */,
 				F20A4B541D093EDD00BCC203 /* MPNotificationViewController.m in Sources */,
 				F20A4B391D093EDD00BCC203 /* MPABTestDesignerChangeRequestMessage.m in Sources */,
@@ -1200,11 +1191,11 @@
 				F2A4681A1CFF1501009DA69C /* WSOTPVerificationViewController.m in Sources */,
 				F262CF9B1CFEE3EA00D1FC03 /* Wheelstreet.xcdatamodeld in Sources */,
 				F20A4B3D1D093EDD00BCC203 /* MPABTestDesignerConnection.m in Sources */,
-				F2A26F661D11400400312577 /* DSLCalendarMonthSelectorView.m in Sources */,
 				F20A4B531D093EDD00BCC203 /* MPNotification.m in Sources */,
 				F2FADB611D102464000BF63D /* MLPAutoCompleteTextField.m in Sources */,
 				F260DE241D0195A600D89EBF /* AFHTTPSessionManager.m in Sources */,
 				F2FADB651D102464000BF63D /* PlaceObject.m in Sources */,
+				F23D87AB1D277C6200EA85C8 /* Bikes.m in Sources */,
 				F20A4B3E1D093EDD00BCC203 /* MPABTestDesignerDeviceInfoRequestMessage.m in Sources */,
 				F20A4B3B1D093EDD00BCC203 /* MPABTestDesignerClearRequestMessage.m in Sources */,
 				F260DE281D0195A600D89EBF /* AFURLResponseSerialization.m in Sources */,
@@ -1221,7 +1212,6 @@
 				F27999741D006BB70010F15D /* WSSignupViewController.m in Sources */,
 				F260DE251D0195A600D89EBF /* AFNetworkReachabilityManager.m in Sources */,
 				F20A4B3C1D093EDD00BCC203 /* MPABTestDesignerClearResponseMessage.m in Sources */,
-				F2A26F6A1D11400400312577 /* DSLCalendarView.m in Sources */,
 				F20A4B441D093EDD00BCC203 /* MPABTestDesignerTweakResponseMessage.m in Sources */,
 				F20A4B5A1D093EDD00BCC203 /* MPObjectIdentityProvider.m in Sources */,
 				F260DE2D1D0195BD00D89EBF /* MBProgressHUD.m in Sources */,
@@ -1230,15 +1220,16 @@
 				F20A4B731D093EDD00BCC203 /* MPUITableViewBinding.m in Sources */,
 				F20A4B331D093EDD00BCC203 /* Mixpanel+AutomaticEvents.m in Sources */,
 				F20A4B4F1D093EDD00BCC203 /* MPDesignerEventBindingResponseMesssage.m in Sources */,
-				F2100BD71D18169200FE7773 /* AvailableBikesViewController.m in Sources */,
 				F20A4B701D093EDD00BCC203 /* MPUIEdgeInsetsToNSDictionaryValueTransformer.m in Sources */,
 				F20A4B251D093EDD00BCC203 /* _MPTweakBindObserver.m in Sources */,
+				F23D87AD1D277C6200EA85C8 /* Filters.m in Sources */,
 				F262CFDA1CFF026700D1FC03 /* WSBaseViewController.m in Sources */,
 				F20A4B431D093EDD00BCC203 /* MPABTestDesignerTweakRequestMessage.m in Sources */,
 				F20A4B5F1D093EDD00BCC203 /* MPPassThroughValueTransformer.m in Sources */,
 				F20A4B611D093EDD00BCC203 /* MPResources.m in Sources */,
 				F20A4B691D093EDD00BCC203 /* MPSwizzler.m in Sources */,
 				F260DE301D01967600D89EBF /* ApiManager.m in Sources */,
+				F23D87A91D277C6200EA85C8 /* Bookings.m in Sources */,
 				F20A4B451D093EDD00BCC203 /* MPApplicationStateSerializer.m in Sources */,
 				F20A4B781D093EDD00BCC203 /* NSNotificationCenter+AutomaticEvents.m in Sources */,
 				F20A4B761D093EDD00BCC203 /* NSData+MPBase64.m in Sources */,
@@ -1248,6 +1239,7 @@
 				F20A4B671D093EDD00BCC203 /* MPSurveyQuestionViewController.m in Sources */,
 				F20A4B6F1D093EDD00BCC203 /* MPUIControlBinding.m in Sources */,
 				F20A4B4B1D093EDD00BCC203 /* MPCGRectToNSDictionaryValueTransformer.m in Sources */,
+				F23D87901D277BB700EA85C8 /* WSCartBikeTableViewCell.m in Sources */,
 				F20A4B351D093EDD00BCC203 /* Mixpanel.m in Sources */,
 				F20A4B721D093EDD00BCC203 /* MPUIImageToNSDictionaryValueTransformer.m in Sources */,
 				F20A4B501D093EDD00BCC203 /* MPDesignerTrackMessage.m in Sources */,
@@ -1256,58 +1248,66 @@
 				F27999621D0018AC0010F15D /* WSOnboardingPageViewController.m in Sources */,
 				F20A4B341D093EDD00BCC203 /* Mixpanel+HostWatchOS.m in Sources */,
 				F27999711D006BAA0010F15D /* WSLoginViewController.m in Sources */,
-				F2A26F681D11400400312577 /* DSLCalendarMonthView.m in Sources */,
 				F20A4B481D093EDD00BCC203 /* MPCGAffineTransformToNSDictionaryValueTransformer.m in Sources */,
 				F260DE271D0195A600D89EBF /* AFURLRequestSerialization.m in Sources */,
 				F20A4B371D093EDD00BCC203 /* MixpanelWatchOS.m in Sources */,
+				F23D87AC1D277C6200EA85C8 /* Filters+CoreDataProperties.m in Sources */,
 				F20A4B631D093EDD00BCC203 /* MPSurvey.m in Sources */,
 				F20A4B7B1D093EDD00BCC203 /* UIApplication+AutomaticEvents.m in Sources */,
+				F23D87A81D277C6200EA85C8 /* Bookings+CoreDataProperties.m in Sources */,
 				F2FADB2D1D0FDCB1000BF63D /* WSHomeScreenViewController.m in Sources */,
 				F20A4B521D093EDD00BCC203 /* MPEventBinding.m in Sources */,
 				F2FADB621D102464000BF63D /* NSString+Levenshtein.m in Sources */,
 				F262CFDF1CFF028500D1FC03 /* Reachability.m in Sources */,
-				F2A26F651D11400400312577 /* DSLCalendarDayView.m in Sources */,
 				F20A4B4D1D093EDD00BCC203 /* MPClassDescription.m in Sources */,
 				F20A4B5E1D093EDD00BCC203 /* MPObjectSerializerContext.m in Sources */,
 				F20A4B381D093EDD00BCC203 /* MPAbstractABTestDesignerMessage.m in Sources */,
+				F23D87BE1D277F3C00EA85C8 /* WSCartViewController.m in Sources */,
 				F20A4B681D093EDD00BCC203 /* MPSwizzle.m in Sources */,
 				F2FADB391D0FDDB7000BF63D /* UINavigationController+TransparentNavigationController.m in Sources */,
 				F27999651D001AA50010F15D /* WSOnboardingPageOneViewController.m in Sources */,
 				F20A4B5C1D093EDD00BCC203 /* MPObjectSerializer.m in Sources */,
 				F20A4B751D093EDD00BCC203 /* MPWebSocket.m in Sources */,
 				F20A4B6D1D093EDD00BCC203 /* MPTypeDescription.m in Sources */,
+				F23D87AA1D277C6200EA85C8 /* Bikes+CoreDataProperties.m in Sources */,
 				F20A4B661D093EDD00BCC203 /* MPSurveyQuestion.m in Sources */,
-				F2A26F631D11400400312577 /* DSLCalendarDayCalloutView.m in Sources */,
 				F20A4B411D093EDD00BCC203 /* MPABTestDesignerSnapshotRequestMessage.m in Sources */,
 				F262CFEC1CFF04BF00D1FC03 /* main.m in Sources */,
 				F20A4B711D093EDD00BCC203 /* MPUIFontToNSDictionaryValueTransformer.m in Sources */,
 				F20A4B511D093EDD00BCC203 /* MPEnumDescription.m in Sources */,
 				F20A4B7F1D093EDD00BCC203 /* UIView+MPHelpers.m in Sources */,
+				F23D87B01D277C6200EA85C8 /* BrandsFilter+CoreDataProperties.m in Sources */,
 				F260DE261D0195A600D89EBF /* AFSecurityPolicy.m in Sources */,
+				F23D878E1D277BB700EA85C8 /* WSBikeLocationsTableViewCell.m in Sources */,
+				F23D87AE1D277C6200EA85C8 /* PriceFilter+CoreDataProperties.m in Sources */,
 				F20A4B421D093EDD00BCC203 /* MPABTestDesignerSnapshotResponseMessage.m in Sources */,
 				F20A4B601D093EDD00BCC203 /* MPPropertyDescription.m in Sources */,
 				F20A4B471D093EDD00BCC203 /* MPCATransform3DToNSDictionaryValueTransformer.m in Sources */,
 				F20A4B6E1D093EDD00BCC203 /* MPUIColorToNSStringValueTransformer.m in Sources */,
 				F20A4B5D1D093EDD00BCC203 /* MPObjectSerializerConfig.m in Sources */,
 				F20A4A2C1D0578C100BCC203 /* WSUser.m in Sources */,
+				F23D87BB1D277F3C00EA85C8 /* WSDisplayBikesViewController.m in Sources */,
+				F23D878C1D277BB700EA85C8 /* WSRoundedRectTextField.m in Sources */,
 				F20A4B651D093EDD00BCC203 /* MPSurveyNavigationController.m in Sources */,
 				F2FADB2B1D0FDCB1000BF63D /* SWRevealViewController.m in Sources */,
 				F26C096C1D02F39F003D9BCF /* WSTextField.m in Sources */,
 				F262CFF01CFF0E1600D1FC03 /* WSSendOTPViewController.m in Sources */,
 				F20A4B6C1D093EDD00BCC203 /* MPTweakStore.m in Sources */,
 				F2A4681D1CFF1D87009DA69C /* WSNewPasswordViewController.m in Sources */,
-				F2A26F791D11400400312577 /* NSDate+DSLCalendarView.m in Sources */,
 				F20A4B591D093EDD00BCC203 /* MPNSNumberToCGFloatValueTransformer.m in Sources */,
 				F262CFE91CFF048100D1FC03 /* AppDelegate.m in Sources */,
 				F260DE291D0195A600D89EBF /* AFURLSessionManager.m in Sources */,
 				F2A26F811D118D7500312577 /* WSInfoViewController.m in Sources */,
+				F23D87BC1D277F3C00EA85C8 /* WSFiltersViewController.m in Sources */,
 				F20A4B4E1D093EDD00BCC203 /* MPDesignerEventBindingRequestMesssage.m in Sources */,
 				F20A4B6A1D093EDD00BCC203 /* MPTweak.m in Sources */,
+				F23D87911D277BB700EA85C8 /* WSCartLocationTableViewCell.m in Sources */,
 				F20A4B801D093EDD00BCC203 /* UIViewController+AutomaticEvents.m in Sources */,
 				F2FADB2C1D0FDCB1000BF63D /* WSMenuViewController.m in Sources */,
 				F20A4B581D093EDD00BCC203 /* MPNSAttributedStringToNSDictionaryValueTransformer.m in Sources */,
+				F23D878D1D277BB700EA85C8 /* WSBikeDisplayTableViewCell.m in Sources */,
+				F23D87B11D277C6200EA85C8 /* BrandsFilter.m in Sources */,
 				F20A4B461D093EDD00BCC203 /* MPBOOLToNSNumberValueTransformer.m in Sources */,
-				F2A26F691D11400400312577 /* DSLCalendarRange.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1320,14 +1320,6 @@
 				F262CF9F1CFEE3EA00D1FC03 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		F2CD8A7F1D12BE6C00B75CCD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F2CD8A801D12BE6C00B75CCD /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -32,7 +32,7 @@
 }
 
 -(void)pageChanged:(int)pageIndex {
-//    NSLog(@"ViewController::pageChanged");
+    //    NSLog(@"ViewController::pageChanged");
     
     // Same screen clicked
     if(pageIndex == pageViewControlIndex)
@@ -54,7 +54,7 @@
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
 {
-//    NSLog(@"viewControllerBeforeViewController");
+    //    NSLog(@"viewControllerBeforeViewController");
     if(pageViewControlIndex == 0)
         return nil;
     
@@ -65,7 +65,7 @@
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
 {
-//    NSLog(@"viewControllerAfterViewController");
+    //    NSLog(@"viewControllerAfterViewController");
     if(pageViewControlIndex == 1)
         return nil;
     
@@ -83,7 +83,7 @@
 }
 
 -(void)pageViewController:(UIPageViewController *)pageViewController willTransitionToViewControllers:(NSArray<UIViewController *> *)pendingViewControllers {
-//    NSLog(@"[pendingViewControllers[0] class]: %@", [pendingViewControllers[0] class]);
+    //    NSLog(@"[pendingViewControllers[0] class]: %@", [pendingViewControllers[0] class]);
     
     if([pendingViewControllers[0] class] == [WSLoginViewController class]) {
         pageViewControlIndex = 0;

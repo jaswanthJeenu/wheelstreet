@@ -21,7 +21,7 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-   
+    
 }
 
 
@@ -33,7 +33,7 @@
 }
 
 - (IBAction)btnNextClicked:(id)sender {
-//    [self performSegueWithIdentifier:@"showOnboardingPageThreeSegue" sender:nil];
+    //    [self performSegueWithIdentifier:@"showOnboardingPageThreeSegue" sender:nil];
     appDelegate.swipeTutorialPageIndex = 3;
 }
 @end

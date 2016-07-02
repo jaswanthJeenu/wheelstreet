@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "UINavigationController+TransparentNavigationController.h"
 #import "SWRevealViewController.h"
-#import "DSLCalendarView.h"
+//#import "DSLCalendarView.h"
+#import "Filters.h"
+#import "Filters+CoreDataProperties.h"
+#import "WSDisplayBikesViewController.h"
 
-
-@interface WSHomeScreenViewController : WSBaseViewController<PlaceSearchTextFieldDelegate, UITextFieldDelegate, DSLCalendarViewDelegate, CLLocationManagerDelegate, UIWebViewDelegate>
+@interface WSHomeScreenViewController : WSBaseViewController<PlaceSearchTextFieldDelegate, UITextFieldDelegate, CLLocationManagerDelegate, UIWebViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 @property (weak, nonatomic) IBOutlet UIView *viewSetLocation;

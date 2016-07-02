@@ -23,16 +23,16 @@
     appDelegate = [UIApplication sharedApplication].delegate;
     
     
-//  If we click on the next button, then the swipe would be disabled if an action segue is connected to the next page. So I connected it to the page view controller and the page view controller would load the appropriate page based on the value of 'swipeTutorialPageIndex'.
-//====================================================================================================================================================
+    //  If we click on the next button, then the swipe would be disabled if an action segue is connected to the next page. So I connected it to the page view controller and the page view controller would load the appropriate page based on the value of 'swipeTutorialPageIndex'.
+    //====================================================================================================================================================
     
     if (appDelegate.swipeTutorialPageIndex == 1){
         
         contentOneViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"contentOneViewController"];
-    
+        
         [self setViewControllers:@[contentOneViewController] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
-    
-//        index = 1;
+        
+        //        index = 1;
         self.navigationController.navigationBar.hidden = YES;
     }
     else if (appDelegate.swipeTutorialPageIndex == 2){
@@ -41,7 +41,7 @@
         
         [self setViewControllers:@[contentTwoViewController] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
         
-//        index = 2;
+        //        index = 2;
         self.navigationController.navigationBar.hidden = YES;
     }
     else if (appDelegate.swipeTutorialPageIndex == 3){
@@ -50,10 +50,33 @@
         
         [self setViewControllers:@[contentThreeViewController] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
         
-//        index = 3;
+        //        index = 3;
         self.navigationController.navigationBar.hidden = YES;
     }
+    
 }
+
+
+//
+//        [[NSNotificationCenter defaultCenter] addObserver:self
+//                                                 selector:@selector(appplicationIsActive:)
+//                                                     name:UIApplicationDidBecomeActiveNotification
+//                                                   object:nil];
+//
+//        [[NSNotificationCenter defaultCenter] addObserver:self
+//                                                 selector:@selector(applicationEnteredForeground:)
+//                                                     name:UIApplicationWillEnterForegroundNotification
+//                                                   object:nil];
+//}
+//
+//    - (void)appplicationIsActive:(NSNotification *)notification {
+//        NSLog(@"Application Did Become Active");
+//    }
+//
+//    - (void)applicationEnteredForeground:(NSNotification *)notification {
+//        NSLog(@"Application Entered Foreground");
+//    }
+//
 
 //====================================================================================================================================================
 
@@ -61,7 +84,7 @@
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
 {
-//    NSLog(@"viewControllerBeforeViewController %d", swipeTutorialPageindex);
+    //    NSLog(@"viewControllerBeforeViewController %d", swipeTutorialPageindex);
     
     if(appDelegate.swipeTutorialPageIndex == 1) {
         return nil;
@@ -76,13 +99,13 @@
         WSOnboardingPageTwoViewController *vcToReturn = [self.storyboard instantiateViewControllerWithIdentifier:@"contentTwoViewController"];
         return vcToReturn;
     }
-
+    
     else return nil;
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
 {
-//    NSLog(@"viewControllerAfterViewController %d", swipeTutorialPageIndex);
+    //    NSLog(@"viewControllerAfterViewController %d", swipeTutorialPageIndex);
     
     if(appDelegate.swipeTutorialPageIndex == 3) {
         return nil;
@@ -119,8 +142,12 @@
     } else if([pendingViewControllers[0] class] == [WSOnboardingPageThreeViewController class]) {
         appDelegate.swipeTutorialPageIndex = 3;
     }
-//    NSLog(@"Page index in will transition: %d", index);
+    //    NSLog(@"Page index in will transition: %d", index);
 }
 
+
+//-(void)viewWillAppear:(BOOL)animated{
+//    
+//}
 
 @end

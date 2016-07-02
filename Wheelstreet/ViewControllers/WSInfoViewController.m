@@ -36,13 +36,13 @@
             [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.wheelstreet.in/about"]]];
             break;
         }
-//        case 4:{
-//            
-//            NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier];
-//            [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];
-//            [self performSegueWithIdentifier:@"showLoginScreenAfterLogoutSegue" sender:nil];
-//            break;
-//        }
+            //        case 4:{
+            //
+            //            NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier];
+            //            [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];
+            //            [self performSegueWithIdentifier:@"showLoginScreenAfterLogoutSegue" sender:nil];
+            //            break;
+            //        }
             
         default:
             break;

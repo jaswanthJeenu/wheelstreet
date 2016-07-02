@@ -37,7 +37,7 @@
         [self showFeedbackWithTitle: NSLocalizedString(@"FAILURE_HANDLER_TITLE", nil) andMessage: NSLocalizedString(@"PASSWORDS_DIDN'T_MATCH", nil) andIsError:YES];
     }
     else{
-         NSDictionary *parameters = @{JSON_KEY_PASSWORD: newPassword, JSON_KEY_CONFIRM_PASSWORD: confirmPassword, JSON_KEY_USER_ID:self.userId};
+        NSDictionary *parameters = @{JSON_KEY_PASSWORD: newPassword, JSON_KEY_CONFIRM_PASSWORD: confirmPassword, JSON_KEY_USER_ID:self.userId};
         [self showProgressHudWithMessage: NSLocalizedString(@"UPDATING_YOUR_PASSWORD", nil)];
         ApiManager *apiManager = [[ApiManager alloc] init];
         
@@ -47,13 +47,13 @@
             [self hideProgressHUD];
             //NSLog(@"Success response: %@", responseObject);
             if([[responseObject objectForKey:JSON_KEY_SUCCESS] boolValue] == YES) {
-//                NSLog(@"Password successfully changed");
-//                [defaults setObject:newPassword forKey:@"new_password"];
+                //                NSLog(@"Password successfully changed");
+                //                [defaults setObject:newPassword forKey:@"new_password"];
                 [self.navigationController popToRootViewControllerAnimated:YES];
                 
             } else {
                 [self showFeedbackWithTitle: NSLocalizedString(@"FAILURE_HANDLER_TITLE", nil) andMessage: [responseObject objectForKey: JSON_KEY_MESSAGE] andIsError:YES];
-//                NSLog(@"Failed to change password");
+                //                NSLog(@"Failed to change password");
             }
             
         } andWithFailureHandler:^(NSError *error) {
@@ -65,10 +65,10 @@
             //NSLog(@"Failure reason: %@", [error localizedDescription]);
         }];
         
-
+        
         
     }
-
+    
 }
 
 - (IBAction)barBtnBackClicked:(id)sender {

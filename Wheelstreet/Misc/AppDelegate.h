@@ -27,6 +27,8 @@
 
 @property int swipeTutorialPageIndex;
 
+@property (strong, nonatomic) NSString *PICKUP_LOCATION;
+@property (strong, nonatomic) NSString *PICKUP_TIME;
+@property (strong, nonatomic) NSString *DROP_TIME;
 
 @end
-

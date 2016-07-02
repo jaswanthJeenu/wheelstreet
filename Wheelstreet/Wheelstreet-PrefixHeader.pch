@@ -14,6 +14,16 @@
 
 @import GoogleMaps;
 
+#import "Bookings.h"
+#import "Bookings+CoreDataProperties.h"
+#import "BrandsFilter.h"
+#import "BrandsFilter+CoreDataProperties.h"
+#import "PriceFilter.h"
+#import "PriceFilter+CoreDataProperties.h"
+#import "Filters+CoreDataProperties.h"
+#import "Filters.h"
+#import "Bikes+CoreDataProperties.h"
+#import "Bikes.h"
 #import "ApiManager.h"
 #import "WSConstants.h"
 #import "WSConfig.h"
@@ -33,6 +43,7 @@
 #import "MVPlaceSearchTextField.h"
 #import <GoogleMaps/GoogleMaps.h>
 #import <CoreLocation/CoreLocation.h>
+
 
 
 #endif /* PrefixHeader_pch */

@@ -40,23 +40,23 @@
     NSString *title = [menu objectAtIndex:indexPath.row];
     cell.textLabel.text = title;
     
-// All the below are different methods tried for erasing the seperator lines in table which didn't work'
+    // All the below are different methods tried for erasing the seperator lines in table which didn't work'
     
     
     
-//    cell.layer.borderWidth = 0.0f;
-//=========
+    //    cell.layer.borderWidth = 0.0f;
+    //=========
     
-//    cell.layer.borderColor = [[UIColor whiteColor] CGColor];
-//=========
+    //    cell.layer.borderColor = [[UIColor whiteColor] CGColor];
+    //=========
     
-//    [self.tableView setBackgroundView:nil];
-//    [self.tableView setBackgroundColor:[UIColor clearColor]];
-//=========
-
-//    cell.contentView.backgroundColor = [UIColor clearColor];
-//========
-
+    //    [self.tableView setBackgroundView:nil];
+    //    [self.tableView setBackgroundColor:[UIColor clearColor]];
+    //=========
+    
+    //    cell.contentView.backgroundColor = [UIColor clearColor];
+    //========
+    
     return cell;
     
 }
@@ -98,7 +98,7 @@
             [self showProgressHudWithMessage: NSLocalizedString(@"LOGGING_OUT", nil)];
             [self performSegueWithIdentifier:@"showLoginScreenAfterLogoutSegue" sender:nil];
             break;
-
+            
         }
             
         default:

@@ -40,12 +40,12 @@
     
     //Changing the navigation bar appearance throughout the app
     //===========================================================================
-
+    
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"status_bar_bg.png"] forBarMetrics:UIBarMetricsDefault];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
-
+    
     //===========================================================================
-
+    
     
     // Integrating mixpanel analytics into our app
     //===========================================================================
@@ -65,11 +65,11 @@
     
     // Integrating the feature of force update into app. Still to be completed
     //===========================================================================
-
+    
     NSLog(@"Build version: %@", [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]);
-        
+    
     //===========================================================================
-
+    
     
     //Integrating crashlytics into our app
     //===========================================================================
@@ -107,7 +107,7 @@
     //														   instantiateViewControllerWithIdentifier: @"RightMenuViewController"];
     
     //	[SlideNavigationController sharedInstance].rightMenu = rightMenu;
-     // Creating a custom bar button for right menu
+    // Creating a custom bar button for right menu
     //	UIButton *button  = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
     //	[button setImage:[UIImage imageNamed:@"gear"] forState:UIControlStateNormal];
     //	[button addTarget:[SlideNavigationController sharedInstance] action:@selector(toggleRightMenu) forControlEvents:UIControlEventTouchUpInside];

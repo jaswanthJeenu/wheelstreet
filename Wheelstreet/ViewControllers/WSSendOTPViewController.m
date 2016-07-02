@@ -18,11 +18,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    [[self.txtMobileNumber layer] setBorderColor:[[UIColor colorWithRed:171.0/255.0
-//                                                  green:171.0/255.0
-//                                                   blue:171.0/255.0
-//                                                  alpha:1.0] CGColor]];
-
+    //    [[self.txtMobileNumber layer] setBorderColor:[[UIColor colorWithRed:171.0/255.0
+    //                                                  green:171.0/255.0
+    //                                                   blue:171.0/255.0
+    //                                                  alpha:1.0] CGColor]];
+    
 }
 - (IBAction)btnSendOTPClicked:(id)sender {
     
@@ -38,33 +38,33 @@
         
         [self showProgressHudWithMessage: NSLocalizedString(@"SENDING_OTP", nil)];
         ApiManager *apiManager = [[ApiManager alloc] init];
-    
+        
         NSString *sendOTP_URL = [NSString stringWithFormat:@"%@%@", [WSUtils getApiBaseURL], URL_FORGOT_PASSWORD];
-    
+        
         [apiManager makeNetworkCallOfType:REQUEST_METHOD_POST withUrl:sendOTP_URL andParameters:parameters withCompletionHandler:^(id  _Nullable responseObject) {
             [self hideProgressHUD];
             //NSLog(@"Success response: %@", responseObject);
             if([[responseObject objectForKey:JSON_KEY_SUCCESS] boolValue] == YES) {
-            
+                
                 //NSLog(@"OTP is successfully sent");
                 user_id = [responseObject objectForKey:JSON_KEY_USER_ID];
                 [self performSegueWithIdentifier:@"showVerificationScreenSegue" sender:nil];
-            
+                
             } else {
                 [self showFeedbackWithTitle: NSLocalizedString(@"FAILURE_HANDLER_TITLE", nil) andMessage: [responseObject objectForKey: JSON_KEY_MESSAGE] andIsError:YES];
                 //NSLog(@"Failed to send OTP");
             }
-        
+            
         } andWithFailureHandler:^(NSError *error) {
             [self hideProgressHUD];
             //        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Sorry!" message:@"Unfortunately, your request failed." delegate:self cancelButtonTitle:@"OK"     otherButtonTitles: nil];
             //        [alert show];
-        
+            
             [self showFeedbackWithTitle: NSLocalizedString(@"FAILURE_HANDLER_TITLE", nil) andMessage: NSLocalizedString(@"FAILURE_HANDLER_MESSAGE", nil) andIsError:YES];
             //NSLog(@"Failure reason: %@", [error localizedDescription]);
         }];
-    
-    
+        
+        
     }
 }
 

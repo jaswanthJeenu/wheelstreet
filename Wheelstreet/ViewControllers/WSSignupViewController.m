@@ -31,16 +31,16 @@
 
 - (IBAction)btnLoginClicked:(id)sender {
     
-//   NSLog(@"WSSignupViewController::loginButtonClicked");
+    //   NSLog(@"WSSignupViewController::loginButtonClicked");
     [self.loginSignupdelegate pageChanged:0];
     
 }
 
 - (IBAction)btnSignUpClicked:(id)sender {
     
-//    NSLog(@"WSSignupViewController::signupButtonClicked");
+    //    NSLog(@"WSSignupViewController::signupButtonClicked");
     [self.loginSignupdelegate pageChanged:1];
-
+    
 }
 
 - (IBAction)btnExistingUserClicked:(id)sender {
@@ -54,11 +54,11 @@
         || [self.txtEmailAddress.text isEqualToString:@""]
         || [self.txtPassword.text isEqualToString:@""]
         || [self.txtConfirmPassword.text isEqualToString:@""]){
-//        [self showTsMessageWithTitle:@"Error" andMessage:@"All fields are mandatory."];
+        //        [self showTsMessageWithTitle:@"Error" andMessage:@"All fields are mandatory."];
         [self showFeedbackWithTitle: NSLocalizedString(@"FAILURE_HANDLER_TITLE", nil) andMessage: NSLocalizedString(@"ALL_THE_FIELDS_ARE_MANDATORY", nil) andIsError:YES];
         
     } else if (![self.txtPassword.text isEqualToString:self.txtConfirmPassword.text]){
-//        [self showTsMessageWithTitle:@"Error" andMessage:@"Passwords didn't match, please check your passwords."];
+        //        [self showTsMessageWithTitle:@"Error" andMessage:@"Passwords didn't match, please check your passwords."];
         [self showFeedbackWithTitle: NSLocalizedString(@"FAILURE_HANDLER_TITLE", nil) andMessage: NSLocalizedString(@"PASSWORDS_DIDN'T_MATCH", nil) andIsError:YES];
     }
     
@@ -78,12 +78,12 @@
             self.user.fbID = 0;
         }
         
-//          int strlength = (int)[self.name length];
-    
+        //          int strlength = (int)[self.name length];
+        
         if ([self.user.name containsString:@" "]){
             NSRange range = [self.user.name rangeOfString:@" "];
             self.user.firstName = [NSString stringWithString:[self.user.name substringToIndex:range.location]];
-//          self.user.lastName = [NSString stringWithString:[self.user.name substringWithRange:NSMakeRange(range.location+1, strlength-(range.location+1))]];
+            //          self.user.lastName = [NSString stringWithString:[self.user.name substringWithRange:NSMakeRange(range.location+1, strlength-(range.location+1))]];
             self.user.lastName = [NSString stringWithString:[self.user.name substringFromIndex:range.location+1]];
         }
         else{
@@ -92,10 +92,10 @@
         }
         
         NSLog(@"User Dictionary: %@",[self.user getUserDictionary: self.isFacebookLogin]);
-                
+        
         /*
-        NSString *jsonParams = [NSString stringWithFormat:@"{\"first_name\": \"%@\", \"last_name\": \"%@\", \"email\": \"%@\", \"mobile\": \"%@\", \"password\": \"%@\", \"confirm_password\": \"%@\"}", self.firstName, self.lastName, self.emailAddress, self.contactNumber, self.password, self.confirmPassword];
-        NSLog(@"Params: %@", [NSString stringWithFormat:@"%@", jsonParams]);
+         NSString *jsonParams = [NSString stringWithFormat:@"{\"first_name\": \"%@\", \"last_name\": \"%@\", \"email\": \"%@\", \"mobile\": \"%@\", \"password\": \"%@\", \"confirm_password\": \"%@\"}", self.firstName, self.lastName, self.emailAddress, self.contactNumber, self.password, self.confirmPassword];
+         NSLog(@"Params: %@", [NSString stringWithFormat:@"%@", jsonParams]);
          */
         
         [self showProgressHudWithMessage: NSLocalizedString(@"SIGNING_UP", nil)];
@@ -132,9 +132,9 @@
             //NSLog(@"Failure reason: %@", [error localizedDescription]);
         }];
         
-
+        
     }
-
+    
 }
 
 - (IBAction)btnContWithFbClicked:(id)sender {
@@ -152,7 +152,7 @@
                                 }
                             }
      ];
-
+    
     
 }
 
@@ -180,8 +180,8 @@
             self.isFacebookLogin = true;
         }
     }];
-     [connection start];
-            
+    [connection start];
+    
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

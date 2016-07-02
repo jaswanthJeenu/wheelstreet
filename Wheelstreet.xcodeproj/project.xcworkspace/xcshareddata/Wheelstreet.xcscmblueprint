@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D1EC0F793EE3790885BCEF76FDCCEAFB5DDF5E94",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5F4FFD7791F84C8099E002D7CDF55A72AAF81907" : 0,
+    "D1EC0F793EE3790885BCEF76FDCCEAFB5DDF5E94" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C5ABC103-0893-482B-AED9-5FC427E0304F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5F4FFD7791F84C8099E002D7CDF55A72AAF81907" : "",
+    "D1EC0F793EE3790885BCEF76FDCCEAFB5DDF5E94" : "check\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Wheelstreet",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Wheelstreet.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jaswanthJeenu\/wheelstreet-app.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5F4FFD7791F84C8099E002D7CDF55A72AAF81907"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jaswanthJeenu\/wheelstreet.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D1EC0F793EE3790885BCEF76FDCCEAFB5DDF5E94"
+    }
+  ]
+}
