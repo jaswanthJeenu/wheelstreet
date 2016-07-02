@@ -4370,7 +4370,7 @@ We'll send you an OTP.</string>
                                 <action selector="btnBackClicked:" destination="SDX-Fw-DXL" id="Tjj-vQ-uuU"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="Back" id="fIM-mS-G3b">
+                        <barButtonItem key="rightBarButtonItem" image="F1" id="fIM-mS-G3b">
                             <connections>
                                 <segue destination="AzE-41-FEH" kind="show" id="SLa-EA-06h"/>
                             </connections>
@@ -4874,6 +4874,7 @@ We'll send you an OTP.</string>
     <resources>
         <image name="BG@1x" width="320" height="480"/>
         <image name="Back" width="16" height="16"/>
+        <image name="F1" width="11" height="11"/>
         <image name="FeedUS" width="152" height="152"/>
         <image name="Locate" width="14" height="14"/>
         <image name="Location" width="12" height="18"/>
